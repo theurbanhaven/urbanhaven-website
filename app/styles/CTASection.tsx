@@ -2,7 +2,7 @@ import BookFreeConsultation from "@/app/components/ui/Button";
 import { useModal } from "@/app/context/Modalcontext";
 
 export default function CTASection() {
-  const { openModal } = useModal();
+  const { openConsultModal } = useModal();
 
   return (
     <section className="w-full bg-[#332959] py-16 px-[376px] flex flex-col items-center text-center">
@@ -19,7 +19,7 @@ export default function CTASection() {
       </p>
 
       {/* Button */}
-      <button onClick={openModal}>
+      <button onClick={openConsultModal}>
         <BookFreeConsultation className="mt-8" />
       </button>
     </section>

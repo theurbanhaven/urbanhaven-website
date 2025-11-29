@@ -1,13 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useModal } from "@/app/context/Modalcontext";
 import ModernBedroom from "@/public/LandingPageImage/Modern-Bedroom.png";
 import CloseIcon from "@/public/LandingPageImage/CloseIcon.png";
 
+// Firestore
+import { db } from "@/app/lib/firebase/config";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+
 export default function ConsultationModal() {
-  const { isOpen, closeModal } = useModal();
+  const { modalType, closeModal, openThankYouModal } = useModal();
+
+  const isOpen = modalType === "CONSULT";
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [pincode, setPincode] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -18,6 +30,34 @@ export default function ConsultationModal() {
   }, [isOpen, closeModal]);
 
   if (!isOpen) return null;
+
+  // Handle Form Submit
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      await addDoc(collection(db, "consultations"), {
+        name,
+        email,
+        phone,
+        pincode,
+        createdAt: serverTimestamp()
+      });
+
+      setName(""), setEmail(""), setPhone(""), setPincode("");
+      closeModal();
+      setTimeout(() => {
+        openThankYouModal();
+      }, 50);
+    } catch (error: any) {
+      console.log("Error submitting form:", error.message);
+      alert("Something went wrong!" + error.message);
+    }
+    setLoading(false);
+  };
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto">
@@ -47,43 +87,49 @@ export default function ConsultationModal() {
               <Image src={CloseIcon} alt="close" height={28} width={28} />
             </button>
 
-            <h2 className="text-white text-xl font-semibold leading-snug">
+            <h2 className="text-white font-['Poppins'] text-xl font-medium leading-[25px]">
               Lets design your <br /> Dream home
             </h2>
           </div>
         </div>
 
         {/* FORM */}
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Form Submitted");
-            closeModal();
-          }}
-          className="px-10 py-6 space-y-4"
-        >
+        <form onSubmit={handleSubmit} className="px-10 py-6 space-y-4">
           <input
             placeholder="Name"
             className="w-full border border-gray-300 rounded-md px-4 py-3"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <input
             placeholder="Email ID"
             className="w-full border border-gray-300 rounded-md px-4 py-3"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            type="email"
           />
           <input
             placeholder="Phone Number"
             className="w-full border border-gray-300 rounded-md px-4 py-3"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
           />
           <input
             placeholder="Pincode"
             className="w-full border border-gray-300 rounded-md px-4 py-3"
+            value={pincode}
+            onChange={(e) => setPincode(e.target.value)}
+            required
           />
 
           <button
             type="submit"
-            className="max-w-[227px] p-3 mx-auto h-[48px] bg-[#F95B46] text-white text-lg font-medium rounded-md flex justify-center items-center"
+            disabled={loading}
+            className="w-[264px] p-3 mx-auto h-[48px] bg-[#F95B46] text-white text-lg font-medium rounded-md flex justify-center items-center"
           >
-            Book Free Consultation
+            {loading ? "Submitting..." : "Get Free Quotation"}
           </button>
         </form>
       </div>

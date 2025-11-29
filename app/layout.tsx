@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ModalProvider } from "@/app/context/Modalcontext";
 import ConsultationModal from "@/app/components/ui/ConsultationModal";
+import ThankYouModal from "@/app/components/ui/ThankYouModal";
 
 export const metadata = {
   title: "Urbanhaven-Best Interior Designers in Delhi & Noida",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className="bg-white text-gray-900">
         <ModalProvider>
           <ConsultationModal />
+          <ThankYouModal />
           {children}
         </ModalProvider>
       </body>

@@ -10,7 +10,7 @@ import { useModal } from "@/app/context/Modalcontext";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { openModal } = useModal();
+  const { openConsultModal } = useModal();
 
   const isActive = (href: string) => pathname === href;
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -52,7 +52,7 @@ export default function Navbar() {
           <button className="h-[44px] w-[161px] px-[16px] py-[10px] rounded-md border border-[#f95b46] text-[#f95b46] text-[16px] font-['Poppins']">
             Get Estimate
           </button>
-          <button onClick={openModal}>
+          <button onClick={openConsultModal}>
             <BookFreeConsultation />
           </button>
         </div>
@@ -91,7 +91,9 @@ export default function Navbar() {
             <button className="w-full border border-[#f95b46] text-[#f95b46] h-11 rounded-md">
               Get Estimate
             </button>
-            <BookFreeConsultation />
+            <button onClick={openConsultModal}>
+              <BookFreeConsultation />
+            </button>
           </div>
         </div>
       )}
