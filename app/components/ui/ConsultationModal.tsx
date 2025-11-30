@@ -60,7 +60,7 @@ export default function ConsultationModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto p-6 sm:p-8">
       {/* backdrop */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -84,7 +84,11 @@ export default function ConsultationModal() {
               onClick={closeModal}
               className="absolute top-2 right-3 bg-white rounded-md p-1 cursor-pointer hover:opacity-80"
             >
-              <Image src={CloseIcon} alt="close" height={28} width={28} />
+              <Image
+                src={CloseIcon}
+                alt="close"
+                className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 cursor-pointer"
+              />
             </button>
 
             <h2 className="text-white font-['Poppins'] text-xl font-medium leading-[25px]">
@@ -94,16 +98,19 @@ export default function ConsultationModal() {
         </div>
 
         {/* FORM */}
-        <form onSubmit={handleSubmit} className="px-10 py-6 space-y-4">
+        <form
+          onSubmit={handleSubmit}
+          className="px-6 py-6 sm:px-8 sm:py-8 space-y-4"
+        >
           <input
             placeholder="Name"
-            className="w-full border border-gray-300 rounded-md px-4 py-3"
+            className="w-full placeholder:font-['Poppins'] font-[normal] text-[#757575] text-base border border-[#d9d9d9] rounded px-4 py-3"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             placeholder="Email ID"
-            className="w-full border border-gray-300 rounded-md px-4 py-3"
+            className="w-full placeholder:font-['Poppins'] font-[semibold] text-base text-[#757575] border border-[#d9d9d9] rounded px-4 py-3"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -111,14 +118,14 @@ export default function ConsultationModal() {
           />
           <input
             placeholder="Phone Number"
-            className="w-full border border-gray-300 rounded-md px-4 py-3"
+            className="w-full placeholder:font-['Poppins'] font-[semibold] text-base text-[#757575] border border-[#d9d9d9] rounded px-4 py-3"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
           />
           <input
             placeholder="Pincode"
-            className="w-full border border-gray-300 rounded-md px-4 py-3"
+            className="w-full placeholder:font-['Poppins'] font-[semibold] text-base text-[#757575] border border-[#d9d9d9] rounded px-4 py-3"
             value={pincode}
             onChange={(e) => setPincode(e.target.value)}
             required
@@ -127,7 +134,7 @@ export default function ConsultationModal() {
           <button
             type="submit"
             disabled={loading}
-            className="w-[264px] p-3 mx-auto h-[48px] bg-[#F95B46] text-white text-lg font-medium rounded-md flex justify-center items-center"
+            className="w-[264px] p-3 mx-auto h-[48px] bg-[#F95B46] text-white text-lg font-medium font-['Poppins'] rounded-md flex justify-center items-center"
           >
             {loading ? "Submitting..." : "Get Free Quotation"}
           </button>

@@ -57,8 +57,6 @@ export default function TestimonialSection() {
     { number: "10 Years", label: "Flat warranty" },
     { number: "45 Days", label: "Move-in guarantee" },
     { number: "146", label: "Quality checks" },
-    { number: "5000+", label: "Happy homes" },
-    { number: "50+", label: "Cities served" },
     { number: "In-house", label: "Manufacturing" }
   ];
 
@@ -100,9 +98,12 @@ export default function TestimonialSection() {
       </div>
 
       {/* Statistics Row */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-10 text-center mt-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 mt-12 justify-items-center text-center mx-auto w-full max-w-[1100px]">
         {stats.map((stat, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
             <h3 className="text-[20px] lg:text-3xl font-bold text-[#F95B46]">
               {stat.number}
             </h3>

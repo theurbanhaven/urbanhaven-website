@@ -20,7 +20,7 @@ export default function ProcessSection() {
     {
       icon: Design,
       title: "Design & Planning",
-      desc: "3D renders, layout & material selection, timeline, quote."
+      desc: "3D renders, layout & material \nselection, timeline, quote."
     },
     {
       icon: Execution,
@@ -42,7 +42,6 @@ export default function ProcessSection() {
       <div className="w-full flex justify-center overflow-x-auto">
         <div className="relative w-[90%] max-w-[1440px] min-w-max">
           {/* Horizontal line */}
-          <div className="absolute top-[70px] left-[12%] right-[12%] border-t border-[#f95b46]"></div>
 
           {/* Steps */}
           <div className="relative flex flex-col md:flex-col lg:flex-row justify-between items-start pt-10 gap-10 lg:gap-0">
@@ -56,8 +55,8 @@ export default function ProcessSection() {
                   <Image
                     src={step.icon}
                     alt={step.title}
-                    width={30}
-                    height={30}
+                    width={75}
+                    height={75}
                   />
                 </div>
 

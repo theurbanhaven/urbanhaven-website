@@ -22,20 +22,32 @@ export default function HeroSection() {
 
       {/* RIGHT SIDE CONTENT – SAME HEIGHT AS LEFT */}
       <div
-        className="flex flex-col justify-center px-6 md:px-10 lg:px-15 py-4"
+        className="
+    flex flex-col justify-center 
+    items-center text-center            
+
+    md:items-start md:text-left          
+    px-6 md:px-10 lg:px-15 py-4
+  "
         style={{ aspectRatio: "971 / 688" }}
       >
-        <h1 className="heading1 text-left">
+        <h1 className="heading1">
           Luxury Interiors,
           <br />
           Thoughtfully Crafted
         </h1>
 
-        <p className="text-black text-[12px] lg:text-[16px] font-normal font-['Poppins'] leading-6 max-w-[379px] mt-4 text-left">
+        <p
+          className="
+    text-black text-sm lg:text-[16px]
+    font-normal font-['Poppins'] leading-6
+    max-w-[300px] mt-4 sm:leading-[16px]
+  "
+        >
           Timeless designs and perfect finishes that make your home truly yours.
         </p>
 
-        <div className="flex justify-start w-full mt-2 lg:mt-12">
+        <div className="flex w-full justify-center md:justify-start mt-[24px] lg:mt-[48px]">
           <button onClick={openConsultModal}>
             <BookFreeConsultation />
           </button>
