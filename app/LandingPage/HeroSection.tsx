@@ -25,11 +25,10 @@ export default function HeroSection() {
         className="
     flex flex-col justify-center 
     items-center text-center            
-
     md:items-start md:text-left          
     px-6 md:px-10 lg:px-15 py-4
   "
-        style={{ aspectRatio: "971 / 688" }}
+        style={{ aspectRatio: "999 / 688" }}
       >
         <h1 className="heading1">
           Luxury Interiors,

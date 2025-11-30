@@ -6,10 +6,10 @@ export default function termscondition() {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen justify-center py-20">
+      <div className="flex min-h-screen justify-center py-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
         <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-white">
-          <div className="flex justify-center bg-[#ffffff] px-4 py-6">
-            <h1 className="font-poppins text-4xl font-bold text-[#0f0f0f]">
+          <div className="flex justify-center bg-[#ffffff] px-2 sm:px-4 py-6">
+            <h1 className="font-poppins text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f0f0f]">
               Terms & Conditions
             </h1>
           </div>
