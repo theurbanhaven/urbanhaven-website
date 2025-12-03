@@ -18,19 +18,19 @@ export default function Home() {
       <section className="w-full">
         <HeroSection />
       </section>
-      <section className="w-full py-16">
+      <section className="w-full p-8 md:p-12 lg:p-16">
         <ServicesSection />
       </section>
-      <section className="w-full py-10">
+      <section className="w-full p-8 md:p-12 lg:p-16">
         <InspirationSection />
       </section>
-      <section className="w-full py-10">
+      <section className="w-full p-8 md:p-12 lg:p-16">
         <FeaturedProjectSection />
       </section>
-      <section className="w-full py-15">
+      <section className="w-full p-8 md:p-12 lg:p-16">
         <ProcessSection />
       </section>
-      <section className="w-full py-10">
+      <section className="w-full p-8 md:p-12 lg:p-16">
         <TestimonialSection />
       </section>
       <section className="w-full">

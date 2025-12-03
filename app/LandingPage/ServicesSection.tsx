@@ -8,11 +8,11 @@ export default function ServicesSection() {
   return (
     <section className="w-full bg-white">
       {/* Heading */}
-      <div className="mb-4">
+      <div className="mb-4 px-6">
         <h2 className="heading2 text-center mb-4">
           One-stop shop for all things interiors
         </h2>
-        <p className="text-center text-[#495057] mb-8 text-base font-['Poppins'] font-normal">
+        <p className="text-center text-[#495057] mb-8 text-sm md:text-base font-['Poppins'] font-normal">
           Be it end-to-end interiors, renovation or modular solutions, we have
           it all for your home. With in-
           <br />

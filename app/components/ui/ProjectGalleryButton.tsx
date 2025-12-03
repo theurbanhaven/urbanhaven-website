@@ -10,7 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function Button({
   label = "View Projects Gallery",
-  width = 234,
+  width = 213,
   height = 48,
   className,
   ...props

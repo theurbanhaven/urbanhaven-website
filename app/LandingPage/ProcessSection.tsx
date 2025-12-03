@@ -25,12 +25,12 @@ export default function ProcessSection() {
     {
       icon: Execution,
       title: "Execution",
-      desc: "In-house team brings it to life  \nwith regular updates and \n quality checks."
+      desc: "In-house team brings it to life  \nwith regular updates."
     },
     {
       icon: FinalTouch,
       title: "Final Touch & Handover",
-      desc: "Walk-through, punch list, move \nin."
+      desc: "Quality checks.Walk-through, punch list, move \nin."
     }
   ];
 
@@ -38,8 +38,7 @@ export default function ProcessSection() {
     <section className="w-full bg-white">
       {/* Heading */}
       <h2 className="heading2 text-center">How it works</h2>
-      {/* Pink Strip + Line */}
-      <div className="w-full flex justify-center overflow-x-auto">
+      <div className="w-full flex justify-center overflow-x-auto overflow-y-hidden">
         <div className="relative w-[90%] max-w-[1440px] min-w-max">
           {/* Horizontal line */}
 
@@ -66,7 +65,7 @@ export default function ProcessSection() {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-2 text-sm text-[#666666] font-normal font-['Poppins'] leading-5 px-2 whitespace-pre-line">
+                <p className="mt-2 text-xs md:text-base text-[#666666] font-normal font-['Poppins'] leading-5 px-2 whitespace-pre-line">
                   {step.desc}
                 </p>
               </div>

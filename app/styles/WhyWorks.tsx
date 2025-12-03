@@ -27,10 +27,10 @@ export default function WhyWorks() {
   ];
 
   return (
-    <section className="w-full py-16 px-6 flex justify-center">
+    <section className="w-full py-8 sm:py-8 md:py-12 lg:py-16 px-6 flex justify-center">
       <div className="max-w-[1100px] w-full text-center">
         <h2 className="heading2-style">Why Our Style Guidance Works</h2>
-        <div className="justify-center text-[#333333] text-lg font-normal font-['Poppins'] leading-[29.25px] mt-6">
+        <div className="justify-center text-[#495057] text-sm md:text-sm lg:text-lg font-normal font-['Poppins'] leading-[29.25px] mt-6">
           At UrbanHaven we don't just apply styles — we help you find your
           style, then execute it with
           <br />
@@ -54,9 +54,9 @@ export default function WhyWorks() {
             </div>
           ))}
         </div>
-        <div className="self-stretch text-center justify-center mt-[128px]">
+        <div className="self-stretch text-center justify-center py-6 sm:py-6 md:py-12 lg:py-16">
           {/* SAME FIX APPLIED HERE TOO */}
-          <p className="text-[#333333] text-xl font-normal font-['Poppins'] leading-7 max-w-full text-center">
+          <p className="text-[#495057] text-sm sm:text-sm md:text-sm lg:text-xl font-normal font-['Poppins'] leading-7 max-w-full text-center">
             At UrbanHaven, we believe your home's style should reflect
             <span className="font-bold"> you</span>. Whether you lean
             minimalist, rustic, modern or eclectic — our in-house design team

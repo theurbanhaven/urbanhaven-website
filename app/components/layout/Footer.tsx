@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white">
       {/* Top Section */}
-      <div className="max-w-[1280px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-[1280px] mx-auto p-12 grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-0">
         {/* Logo & Text */}
         <div className="space-y-4">
           <Image src={UrbanhavenLogo} alt="Urbanhaven Logo" className="w-44" />
@@ -23,10 +23,10 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-semibold text-[#0f0f0f] text-base mb-4">
+          <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Services
           </h4>
-          <ul className="space-y-4 text-sm text-[#666666]">
+          <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666]">
             <li>Full Home Interiors</li>
             <li>Modular Kitchens</li>
             <li>Bedrooms & Living</li>
@@ -36,10 +36,10 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-[#0f0f0f] text-base mb-4">
+          <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Quick Links
           </h4>
-          <ul className="space-y-4 text-sm text-[#666666]">
+          <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666]">
             <li>Portfolio</li>
             <li>Blog</li>
             <li>About Us</li>
@@ -49,10 +49,10 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="font-semibold text-[#0f0f0f] text-base mb-4">
+          <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Contact Us
           </h4>
-          <ul className="space-y-4 text-sm text-[#666666]">
+          <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666]">
             <li className="flex gap-2">
               <Image src={Phone} alt="phone" className="w-4 h-4 mt-1" />
               <a
@@ -89,7 +89,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="border-t border-[#e6e6e6]">
-        <div className="max-w-[1280px] mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+        <div className="max-w-[1280px] mx-auto p-6 flex flex-col md:flex-row items-center justify-between">
           {/* Social Icons */}
           <div className="flex items-center gap-4">
             <a

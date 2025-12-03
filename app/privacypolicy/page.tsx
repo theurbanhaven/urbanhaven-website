@@ -9,14 +9,14 @@ export default function PrivacyPolicy() {
       <div className="flex min-h-screen justify-center py-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
         <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-white">
           <div className="flex justify-center bg-[#ffffff] px-4 py-6">
-            <h1 className="font-poppins text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f0f0f]">
+            <h1 className="font-['Poppins'] text-2xl sm:text-3xl md:text-5xl font-bold text-[#0f0f0f]">
               Privacy Policy
             </h1>
           </div>
 
-          <div className="font-poppins space-y-6 text-[15px] leading-relaxed text-gray-800">
+          <div className="font-['Poppins'] space-y-6 text-[15px] leading-relaxed text-gray-800">
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 1. Introduction
               </h2>
               <p className="font-['Poppins'] text-[#333333] font-normal">
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 2. Who We Are
               </h2>
               <p className="font-['Poppins'] text-[#333333] font-normal">
@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 3. Scope and Application
               </h2>
               <p className="font-['Poppins'] text-[#333333] font-normal">
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 4. Information We Collect
               </h2>
               <p className="mb-3 font-['Poppins'] text-[#333333]">
@@ -177,7 +177,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 5. How We Collect Information
               </h2>
               <p className="mb-2 font-['Poppins'] text-[#333333]">
@@ -200,7 +200,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 6. Purposes for Which We Use Your Information
               </h2>
               <p className="mb-2 font-['Poppins'] text-[#333333]">
@@ -241,7 +241,7 @@ export default function PrivacyPolicy() {
             </section>
             <section className="space-y-6 text-[#333333]">
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   7. Disclosure & Sharing of Information
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -273,7 +273,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   8. Cookies & Similar Technologies
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -286,7 +286,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   9. Storage, Transfers & International Processing
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -298,7 +298,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   10. Data Retention
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -310,7 +310,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   11. Security
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -323,7 +323,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                   12. Children’s Privacy
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -336,7 +336,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   13. Your Rights & Choices
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -370,7 +370,7 @@ export default function PrivacyPolicy() {
 
             <section className="space-y-6 text-[#333333]">
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   14. Opt-Out of Marketing
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -381,7 +381,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   15. Business Transitions
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -393,7 +393,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   16. Links to Other Websites
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -405,7 +405,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   17. Changes to This Policy
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -417,7 +417,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   18. Governing Law & Jurisdiction
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">
@@ -428,7 +428,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div>
-                <h2 className="mb-2 font-['poppins'] text-2xl font-semibold text-[#333333]">
+                <h2 className="mb-2 font-['Poppins'] text-2xl font-semibold text-[#333333]">
                   19. Contact Us
                 </h2>
                 <p className="font-['Poppins'] text-[#333333]">

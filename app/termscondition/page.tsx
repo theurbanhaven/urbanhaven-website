@@ -9,14 +9,14 @@ export default function termscondition() {
       <div className="flex min-h-screen justify-center py-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
         <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-white">
           <div className="flex justify-center bg-[#ffffff] px-2 sm:px-4 py-6">
-            <h1 className="font-poppins text-2xl sm:text-3xl md:text-4xl font-bold text-[#0f0f0f]">
+            <h1 className="font-['Poppins'] text-2xl sm:text-3xl md:text-5xl font-bold text-[#0f0f0f]">
               Terms & Conditions
             </h1>
           </div>
 
-          <div className="font-poppins space-y-6 text-[15px] leading-relaxed text-gray-800">
+          <div className="font-['Poppins'] space-y-6 text-[15px] leading-relaxed text-gray-800">
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 1. Introduction
               </h2>
               <p className="font-medium font-['Poppins'] text-[#333333]">
@@ -38,7 +38,7 @@ export default function termscondition() {
             </section>
 
             <section>
-              <h2 className="mb-2 font-['poppins'] text-2xl font-bold text-[#333333]">
+              <h2 className="mb-2 font-['Poppins'] text-2xl font-bold text-[#333333]">
                 2. Definitions
               </h2>
               <ul className="ml-6 list-disc space-y-1">

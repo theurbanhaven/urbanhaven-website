@@ -43,12 +43,12 @@ export default function TestimonialSection() {
     },
     {
       text: `"Professional team, transparent pricing, and stunning results. Highly recommend UrbanHaven!"`,
-      name: "Brandon King",
+      name: "Manoj Dey",
       location: "Delhi NCR"
     },
     {
       text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,
-      name: "Even Lewis",
+      name: "Aman Singh",
       location: "Gurgaon"
     }
   ];
@@ -61,16 +61,18 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <section className="w-full py-10 ">
+    <section className="w-full min-h-[380px]">
       {/* Heading */}
-      <h2 className="heading2 text-center mb-8">Why choose us</h2>
+      <h2 className="heading2 text-center mb-6 md:mb-6 lg:mb-8">
+        Why choose us
+      </h2>
 
       <div className="testimonial-wrapper">
         <div className="testimonial-track">
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
               key={index}
-              className="w-[426px] testimonial-card border border-gray-200 rounded-xl p-6 bg-white shadow-sm flex-shrink-0"
+              className="w-[316px] md:w-[316px] lg:w-[426px] testimonial-card border border-gray-200 rounded-xl p-6 bg-white shadow-sm flex-shrink-0"
             >
               <div className="flex gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
@@ -98,13 +100,13 @@ export default function TestimonialSection() {
       </div>
 
       {/* Statistics Row */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 mt-12 justify-items-center text-center mx-auto w-full max-w-[1100px]">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-10 mt-6 md:mt-6 lg:mt-8 justify-items-center text-center mx-auto w-full max-w-[1100px]">
         {stats.map((stat, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center"
           >
-            <h3 className="text-[20px] lg:text-3xl font-bold text-[#F95B46]">
+            <h3 className="text-xl lg:text-[32px] font-bold text-[#F95B46]">
               {stat.number}
             </h3>
             <p className="text-sm text-[#666666]">{stat.label}</p>

@@ -6,9 +6,9 @@ import { useModal } from "@/app/context/Modalcontext";
 export default function CTASection() {
   const { openConsultModal } = useModal();
   return (
-    <section className="w-full bg-[#332959] py-16 flex flex-col items-center text-center">
+    <section className="w-full min-h-[300px] bg-[#332959] py-8 md:py-12 lg:py-16 px-10 md:px-11 lg:px-12 flex flex-col items-center text-center">
       {/* Heading */}
-      <h2 className=" md:text-[40px] text-white text-5xl font-bold font-['Poppins'] leading-[48px]">
+      <h2 className="text-2xl md:text-2xl lg:text-5xl text-white font-bold font-['Poppins'] leading-[48px]">
         Ready to Transform Your Space?
       </h2>
 

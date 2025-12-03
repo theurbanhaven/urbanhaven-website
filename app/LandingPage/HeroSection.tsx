@@ -26,7 +26,7 @@ export default function HeroSection() {
     flex flex-col justify-center 
     items-center text-center            
     md:items-start md:text-left          
-    px-6 md:px-10 lg:px-15 py-4
+    px-6 md:px-10 lg:px-15
   "
         style={{ aspectRatio: "999 / 688" }}
       >
