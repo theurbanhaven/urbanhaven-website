@@ -43,7 +43,9 @@ export default function Footer() {
             <li>Portfolio</li>
             <li>Blog</li>
             <li>About Us</li>
-            <li>Contact</li>
+            <Link href="/contactus" className="hover:text-black">
+              Contact
+            </Link>
           </ul>
         </div>
 

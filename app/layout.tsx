@@ -2,6 +2,7 @@ import "./globals.css";
 import { ModalProvider } from "@/app/context/Modalcontext";
 import ConsultationModal from "@/app/components/ui/ConsultationModal";
 import ThankYouModal from "@/app/components/ui/ThankYouModal";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Urbanhaven-Best Interior Designers in Delhi & Noida",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className="bg-white text-gray-900">
+        <Toaster position="top-center" />
         <ModalProvider>
           <ConsultationModal />
           <ThankYouModal />
