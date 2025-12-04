@@ -49,9 +49,9 @@ export default function ContactInfoSection() {
             <div
               key={index}
               className="
-                bg-white rounded-xl shadow-md border border-gray-200 
+                 rounded-xl shadow-md border border-gray-200 
                 flex flex-col items-center text-center 
-                p-6 hover:scale-105 transition-all
+                p-6 hover:scale-105 transition-all bg-white
               "
             >
               <div className="mb-4">

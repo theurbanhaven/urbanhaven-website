@@ -255,7 +255,7 @@ export default function ProjectDetailsForm() {
 
           {/* Submit */}
           <div className="md:col-span-2">
-            <button className="w-full py-4 px-6 bg-[#FF7350] text-white font-semibold rounded-md cursor-pointer">
+            <button className="w-full py-4 px-6 bg-[#f95b46] text-white font-medium font-['Poppins'] rounded-md cursor-pointer hover:opacity-90 hover:scale-105">
               Submit Your Request
             </button>
           </div>

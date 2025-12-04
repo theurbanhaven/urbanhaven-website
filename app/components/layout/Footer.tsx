@@ -42,10 +42,17 @@ export default function Footer() {
           <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666]">
             <li>Portfolio</li>
             <li>Blog</li>
-            <li>About Us</li>
-            <Link href="/contactus" className="hover:text-black">
-              Contact
-            </Link>
+            <li>
+              {" "}
+              <Link href="/aboutus" className="hover:text-black">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/contactus" className="hover:text-black">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 

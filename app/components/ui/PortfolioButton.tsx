@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({
-  label = "Book Free Consultation",
+  label = "Explore Our Portfolio",
   className,
   ...props
 }: ButtonProps) {
