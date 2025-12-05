@@ -21,11 +21,10 @@ export default function InspirationSection() {
       <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-4 xl:px-45">
         {/* Heading */}
         <h2 className="heading2 text-center">
-          Inspiration for home interior designs
+          Inspiration that helps you design the perfect home
         </h2>
         <p className="text-[#495057] text-base font-normal font-['Poppins'] text-center mt-4">
-          Give your home a new look with these interior design ideas curated for
-          you
+          Discover curated interior ideas to elevate your living space
         </p>
 
         {/* Cards Container */}

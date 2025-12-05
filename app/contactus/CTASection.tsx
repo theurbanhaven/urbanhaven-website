@@ -7,7 +7,7 @@ export default function CTASection() {
   return (
     <section className="w-full bg-[#332959] py-8 sm:py-8 md:py-12 lg:py-16 px-6 flex flex-col items-center text-center">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-6xl text-white font-bold font-['Poppins'] leading-[48px]">
+      <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-6xl text-white font-bold font-['Poppins'] leading-[28px] sm:leading-[28px] md:leading-[28px] lg:leading-[28px]">
         Let's Create Your Ideal Home Together
       </h2>
 

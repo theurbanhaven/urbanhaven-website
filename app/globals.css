@@ -40,7 +40,7 @@
 @layer components {
   .heading1 {
     @apply text-[#f95b46] 
-           text-[32px] leading-[32px]   
+           text-[32px] sm:text-[32px] md:text-[32px] leading-[32px] sm:leading-[32px] md:leading-[32px]
            lg:text-[64px] lg:leading-[64px] 
            font-bold font-['Poppins'] tracking-tight;
   }

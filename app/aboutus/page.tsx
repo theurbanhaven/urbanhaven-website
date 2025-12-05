@@ -3,6 +3,7 @@ import Navbar from "@/app/components/layout/Navbar";
 import OurStory from "@/app/aboutus/OurStory";
 import MissionVisionValues from "@/app/aboutus/mission-vision-values";
 import WhatWeOffer from "@/app/aboutus/offer";
+import ReachImpact from "@/app/aboutus/Reach-Impact";
 
 export default function Aboutus() {
   return (
@@ -21,6 +22,9 @@ export default function Aboutus() {
       </section>
       <section>
         <WhatWeOffer />
+      </section>
+      <section>
+        <ReachImpact />
       </section>
     </div>
   );

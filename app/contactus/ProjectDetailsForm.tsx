@@ -73,7 +73,7 @@ export default function ProjectDetailsForm() {
 
   return (
     <div className="w-full flex justify-center bg-white">
-      <div className="w-full max-w-3xl py-8 lg:py-16 px-6 lg:px-16">
+      <div className="w-full max-w-3xl py-8 lg:py-16 px-6 sm:px-6 md:px-6 lg:px-16">
         <h1 className="text-center font-semibold font-['Poppins'] text-black text-2xl sm:text-2xl md:text-2xl lg:text-5xl">
           Tell Us About Your Project
         </h1>
@@ -157,6 +157,7 @@ export default function ProjectDetailsForm() {
                 <option>Noida</option>
                 <option>Ghaziabad</option>
                 <option>Greater Noida (NCR)</option>
+                <option>Other</option>
               </select>
 
               <Image
@@ -223,7 +224,8 @@ export default function ProjectDetailsForm() {
                 <option>₹3L – ₹6L</option>
                 <option>₹6L – ₹9L</option>
                 <option>₹9L – ₹12L</option>
-                <option>₹12L+</option>
+                <option>₹12L – ₹20L</option>
+                <option>₹20L+</option>
               </select>
 
               <Image

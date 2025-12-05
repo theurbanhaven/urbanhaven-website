@@ -20,9 +20,11 @@ export default function FeaturedProjectSection() {
   return (
     <section className="w-full bg-white">
       <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-4 xl:px-45">
-        <h2 className="heading2 text-center">Featured Projects</h2>
+        <h2 className="heading2 text-center">
+          Homes We’ve Transformed - A Showcase of Our Work
+        </h2>
         <p className="text-[#666666] text-base font-normal font-['Poppins'] text-center mt-4">
-          Spaces transformed with our expertise and craftsmanship
+        Spaces reimagined through thoughtful design and skilled craftsmanship
         </p>
         <div
           className="flex gap-4 overflow-x-auto md:overflow-visible pb-4 
