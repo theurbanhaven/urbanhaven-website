@@ -7,9 +7,9 @@ import "swiper/css";
 export default function TestimonialSection() {
   const testimonials = [
     {
-      text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,
-      name: "Priya & Rahul Sharma",
-      location: "Delhi"
+      text: `"I got my house renovated from UrbanHaven, and the process was seemless.They understood my requirement very well, and their final designs exceeded my expectations. Highly recommended."`,
+      name: "Amit Singhal",
+      location: "Noida"
     },
     {
       text: `"From concept to finish, the quality amazed us. Best decision ever for our home renovation!"`,
@@ -22,29 +22,9 @@ export default function TestimonialSection() {
       location: "Gurgaon"
     },
     {
-      text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,
-      name: "Priya & Rahul Sharma",
-      location: "Delhi"
-    },
-    {
-      text: `"Professional team, transparent pricing, and stunning results. Highly recommend UrbanHaven!"`,
-      name: "Karan Singh",
-      location: "Delhi NCR"
-    },
-    {
-      text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,
-      name: "Pankaj Mathur",
-      location: "Gurgaon"
-    },
-    {
-      text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,
-      name: "Raman Tiwary",
-      location: "Delhi"
-    },
-    {
-      text: `"Professional team, transparent pricing, and stunning results. Highly recommend UrbanHaven!"`,
-      name: "Manoj Dey",
-      location: "Delhi NCR"
+      text: `"From the first meeting to the final handover, everything was organized. The designs were trendy and the materials used feel premium."`,
+      name: "Sandhya",
+      location: "Ghaziabad"
     },
     {
       text: `"UrbanHaven made our kitchen come alive, on time and on budget. The attention to detail was incredible!"`,

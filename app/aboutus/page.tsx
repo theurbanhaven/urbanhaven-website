@@ -6,6 +6,7 @@ import WhatWeOffer from "@/app/aboutus/offer";
 import ReachImpact from "@/app/aboutus/Reach-Impact";
 import QualityWarrantySection from "@/app/aboutus/QualityWarrantySection";
 import ClientStories from "@/app/aboutus/ClientStories";
+import CTASection1 from "@/app/aboutus/CTASection1";
 import Footer from "../components/layout/Footer";
 
 export default function Aboutus() {
@@ -34,6 +35,9 @@ export default function Aboutus() {
       </section>
       <section className="w-full">
         <ClientStories />
+      </section>
+      <section className="w-full">
+        <CTASection1 />
       </section>
       <section className="w-full">
         <Footer />
