@@ -23,7 +23,7 @@ export default function ThankYouModal() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto px-2">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -50,7 +50,7 @@ export default function ThankYouModal() {
         </div>
 
         {/* Content Section */}
-        <div className="py-8 text-center">
+        <div className="py-8 px-2 text-center">
           <p className="text-[#000000] text-xl font-bold font-['Poppins']">
             Thank You for Reaching Out.
           </p>

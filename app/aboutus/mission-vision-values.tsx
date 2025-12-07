@@ -50,7 +50,7 @@ export default function MissionVisionValues() {
     <section className="w-full py-16">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-center text-4xl md:text-5xl font-semibold font-['Poppins'] text-[#0f0f0f]">
+        <h2 className="text-center heading2">
           Mission • Vision • Core Values
         </h2>
 

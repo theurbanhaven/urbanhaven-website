@@ -134,7 +134,7 @@ export default function ConsultationModal() {
           <button
             type="submit"
             disabled={loading}
-            className="w-[264px] p-3 mx-auto h-[48px] bg-[#F95B46] text-white text-lg font-medium font-['Poppins'] rounded-md flex justify-center items-center"
+            className="w-[220px] p-3 mx-auto h-[40px] bg-[#F95B46] text-white text-lg font-medium font-['Poppins'] rounded-md flex justify-center items-center"
           >
             {loading ? "Submitting..." : "Get Free Quotation"}
           </button>

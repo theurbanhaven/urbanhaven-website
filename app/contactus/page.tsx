@@ -23,16 +23,16 @@ export default function ContactUs() {
       <section className="w-full">
         <ProjectDetailsForm />
       </section>
-      <section>
+      <section className="w-full">
         <VisitUs />
       </section>
-      <section>
+      <section className="w-full">
         <FAQSection />
       </section>
-      <section>
+      <section className="w-full">
         <CTASections />
       </section>
-      <section>
+      <section className="w-full">
         <Footer />
       </section>
     </div>

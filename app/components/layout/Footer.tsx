@@ -43,7 +43,6 @@ export default function Footer() {
             <li>Portfolio</li>
             <li>Blog</li>
             <li>
-              {" "}
               <Link href="/aboutus" className="hover:text-black">
                 About Us
               </Link>
@@ -137,7 +136,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-[#666666] font-normal font-['Poppins'] mt-3 md:mt-0">
+          <p className="text-sm text-[#666666] text-center font-normal font-['Poppins'] mt-3 md:mt-0">
             © 2025 UrbanHaven. All rights reserved.
           </p>
         </div>

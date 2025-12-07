@@ -11,12 +11,14 @@ export default function HeroSection() {
     <section className="w-full grid grid-cols-1 md:grid-cols-2 pt-16">
       {/* IMAGE SECTION */}
       <div
-        className="relative w-full 
-        h-[300px] 
-        sm:h-[400px] 
-        md:h-[500px] 
-        lg:h-[650px] 
-      "
+        className="
+     relative w-full 
+     h-[65vw]      
+     sm:h-[55vw] 
+     md:h-[52vw]  
+     lg:h-[650px] 
+     overflow-hidden
+  "
       >
         <Image
           src={HomeImage}
@@ -45,7 +47,7 @@ export default function HeroSection() {
         <p
           className="
             text-black text-sm lg:text-[16px]
-            font-normal leading-6
+            font-normal font-['Poppins'] leading-6
             max-w-[320px] mt-6
           "
         >
@@ -66,24 +68,30 @@ export default function HeroSection() {
           "
         >
           <div>
-            <span className="text-[#FF6A5A] font-semibold text-base">
+            <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               10 Years
             </span>
-            <span className="text-[#666] text-sm block">Flat warranty</span>
+            <span className="text-[#495057] text:sm sm:text-sm md:text-sm lg:text-[2xl] block font-normal font-['Poppins']">
+              Flat warranty
+            </span>
           </div>
 
           <div>
-            <span className="text-[#FF6A5A] font-semibold text-base">
+            <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               45 Days
             </span>
-            <span className="text-[#666] text-sm block">Move-in guarantee</span>
+            <span className="text-[#495057] text:sm sm:text-sm md:text-sm lg:text-[2xl] block font-normal font-['Poppins']">
+              Move-in guarantee
+            </span>
           </div>
 
           <div>
-            <span className="text-[#FF6A5A] font-semibold text-base">
+            <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               In-house
             </span>
-            <span className="text-[#666] text-sm block">Manufacturing</span>
+            <span className="text-[#495057] text:sm sm:text-sm md:text-sm lg:text-[2xl] block font-normal font-['Poppins']">
+              Manufacturing
+            </span>
           </div>
         </div>
       </div>

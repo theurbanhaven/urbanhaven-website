@@ -35,11 +35,11 @@ export default function ContactInfoSection() {
   ];
 
   return (
-    <section className="w-full py-[64px]">
+    <section className="w-full py-[32px] sm:py-[32px] md:py-[32px] lg:py-[64px]">
       <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-20 xl:px-32">
         <h2
           className="text-[#0f0f0f] text-center font-bold font-['Poppins']
-        text-5xl leading-[48px] mb-[48px]"
+        text-2xl sm:text-2xl md:text-2xl lg:text-5xl leading-[48px] mb-[48px]"
         >
           Get In Touch
         </h2>

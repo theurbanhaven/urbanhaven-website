@@ -4,6 +4,9 @@ import OurStory from "@/app/aboutus/OurStory";
 import MissionVisionValues from "@/app/aboutus/mission-vision-values";
 import WhatWeOffer from "@/app/aboutus/offer";
 import ReachImpact from "@/app/aboutus/Reach-Impact";
+import QualityWarrantySection from "@/app/aboutus/QualityWarrantySection";
+import ClientStories from "@/app/aboutus/ClientStories";
+import Footer from "../components/layout/Footer";
 
 export default function Aboutus() {
   return (
@@ -14,17 +17,26 @@ export default function Aboutus() {
       <section className="w-full">
         <CTASection />
       </section>
-      <section>
+      <section className="w-full">
         <OurStory />
       </section>
-      <section>
+      <section className="w-full">
         <MissionVisionValues />
       </section>
-      <section>
+      <section className="w-full">
         <WhatWeOffer />
       </section>
-      <section>
+      <section className="w-full">
         <ReachImpact />
+      </section>
+      <section className="w-full">
+        <QualityWarrantySection />
+      </section>
+      <section className="w-full">
+        <ClientStories />
+      </section>
+      <section className="w-full">
+        <Footer />
       </section>
     </div>
   );

@@ -20,7 +20,7 @@ export default function WhatWeOffer() {
     <section className="w-full bg-white py-16">
       <div className="max-w-5xl mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-center text-4xl md:text-5xl font-semibold font-['Poppins'] text-[#0f0f0f]">
+        <h2 className="text-center heading2">
           What We Offer
         </h2>
 

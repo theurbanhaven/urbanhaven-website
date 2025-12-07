@@ -5,8 +5,9 @@ import ThankYouModal from "@/app/components/ui/ThankYouModal";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "Urbanhaven-Best Interior Designers in Delhi & Noida",
-  description: "Transform your home into a beautiful, functional space."
+  title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+  description:
+    "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services."
 };
 
 export default function RootLayout({

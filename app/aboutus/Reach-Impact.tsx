@@ -17,7 +17,7 @@ export default function ReachImpact() {
             the same: craftsmanship, transparency and you-oriented design.
           </p>
 
-          <div className="flex flex-col md:flex-row justify-between items-center mt-8 gap-10 md:gap-0 px-35">
+          <div className="flex flex-col md:flex-row justify-between items-center mt-8 gap-10 md:gap-0">
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-semibold">45 Days</h3>
               <p className="text-sm mt-1 opacity-80">Move-in guarantee</p>
