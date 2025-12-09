@@ -72,7 +72,6 @@ export default function ThankYouModal() {
           {/* Button */}
           <button
             onClick={() => {
-              // 👉 You can redirect to projects page
               window.location.href = "/styles";
             }}
             className="mt-5 w-[260px] h-[48px] bg-[#F95B46] cursor-pointer text-white rounded-md text-lg font-medium mx-auto"

@@ -77,10 +77,10 @@ export default function Navbar() {
           {[
             { href: "/", label: "Home" },
             { href: "/services", label: "Services" },
-            { href: "/styles", label: "Styles" },
-            { href: "/portfolio", label: "Portfolio" },
-            { href: "/process", label: "Process" },
-            { href: "/blog", label: "Blog" }
+            { href: "/styles", label: "Styles" }
+            // { href: "/portfolio", label: "Portfolio" },
+            // { href: "/process", label: "Process" },
+            // { href: "/blog", label: "Blog" }
           ].map(({ href, label }) => (
             <Link
               key={href}
@@ -195,10 +195,10 @@ export default function Navbar() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/services", label: "Services" },
-                { href: "/styles", label: "Styles" },
-                { href: "/portfolio", label: "Portfolio" },
-                { href: "/process", label: "Process" },
-                { href: "/blog", label: "Blog" }
+                { href: "/styles", label: "Styles" }
+                // { href: "/portfolio", label: "Portfolio" },
+                // { href: "/process", label: "Process" },
+                // { href: "/blog", label: "Blog" }
               ].map(({ href, label }) => (
                 <Link
                   key={href}
