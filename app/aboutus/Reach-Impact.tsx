@@ -2,9 +2,9 @@
 
 export default function ReachImpact() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-8 sm:py-8 md:py-8 lg:py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-center text-5xl font-semibold text-black leading-48px font-['Poppins']">
+        <h2 className="text-center heading2">
           Our Reach & Impact
         </h2>
 

@@ -4,6 +4,7 @@ import OurStory from "@/app/aboutus/OurStory";
 import MissionVisionValues from "@/app/aboutus/mission-vision-values";
 import WhatWeOffer from "@/app/aboutus/offer";
 import ReachImpact from "@/app/aboutus/Reach-Impact";
+import UrbanhavenTeam from "@/app/aboutus/UrbanhavenTeam";
 import QualityWarrantySection from "@/app/aboutus/QualityWarrantySection";
 import ClientStories from "@/app/aboutus/ClientStories";
 import CTASection1 from "@/app/aboutus/CTASection1";
@@ -29,6 +30,9 @@ export default function Aboutus() {
       </section>
       <section className="w-full">
         <ReachImpact />
+      </section>
+      <section className="w-full">
+        <UrbanhavenTeam />
       </section>
       <section className="w-full">
         <QualityWarrantySection />

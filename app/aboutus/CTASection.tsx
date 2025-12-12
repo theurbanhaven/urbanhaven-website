@@ -4,11 +4,10 @@ import Portfolio from "@/app/components/ui/PortfolioButton";
 import { useModal } from "@/app/context/Modalcontext";
 
 export default function CTASection() {
-
   return (
     <section className="w-full bg-[#332959] py-8 sm:py-8 md:py-12 lg:py-16 px-6 flex flex-col items-center text-center">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-6xl text-white font-bold font-['Poppins'] leading-[28px] sm:leading-[28px] md:leading-[28px] lg:leading-[48px]">
+      <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-5xl text-white font-bold font-['Poppins'] leading-[28px] sm:leading-[28px] md:leading-[28px] lg:leading-[48px]">
         Your Home. Our Craft. The UrbanHaven Promise.
       </h2>
 
@@ -19,9 +18,10 @@ export default function CTASection() {
       </p>
 
       {/* Button */}
-      <button>
+      {/* <button>
         <Portfolio className="mt-8" />
-      </button>
+      </button> */}
+      <Portfolio className="mt-8" />
     </section>
   );
 }

@@ -30,7 +30,7 @@ export default function Home() {
       <section className="w-full p-8 md:p-12 lg:p-16">
         <ProcessSection />
       </section>
-      <section className="w-full p-8 md:p-12 lg:p-16">
+      <section className="w-full py-8 md:py-12 lg:py-16">
         <TestimonialSection />
       </section>
       <section className="w-full">

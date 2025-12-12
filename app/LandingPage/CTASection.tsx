@@ -18,10 +18,7 @@ export default function CTASection() {
         design experts today.
       </p>
 
-      {/* Button */}
-      <button onClick={openConsultModal}>
-        <BookFreeConsultation className="mt-8" />
-      </button>
+      <BookFreeConsultation onClick={openConsultModal} className="mt-8" />
     </section>
   );
 }

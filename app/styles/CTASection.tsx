@@ -18,10 +18,7 @@ export default function CTASection() {
         reflects your home and you.
       </p>
 
-      {/* Button */}
-      <button onClick={openConsultModal}>
-        <BookFreeConsultation className="mt-8" />
-      </button>
+      <BookFreeConsultation onClick={openConsultModal} className="mt-8" />
     </section>
   );
 }

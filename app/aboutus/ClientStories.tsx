@@ -23,7 +23,7 @@ export default function ClientStoriesSection() {
   ];
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-8 sm:py-8 md:py-8 lg:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-center heading2">Client Stories</h2>

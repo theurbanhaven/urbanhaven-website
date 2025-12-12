@@ -1,15 +1,11 @@
 export default function OurStory() {
   return (
-    <section className="w-full bg-white py-16">
+    <section className="w-full bg-white py-8 sm:py-8 md:py-8 lg:py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-center heading2">
-          Our Story
-        </h2>
+        <h2 className="text-center heading2">Our Story</h2>
 
-        <div className="mt-8" />
-
-        <div className="max-w-7xl mx-auto  border border-[#e5e5e5] rounded-2xl p-8 shadow-sm">
-          <p className="text-center text-[#0f0f0f] text-xl font-normal font-['Poppins'] leading-6">
+        <div className="max-w-7xl mx-auto rounded-2xl p-8">
+          <p className="text-center text-black text-sm sm:text-sm md:text-sm lg:text-xl font-normal font-['Poppins'] leading-6">
             Founded in 2025, Urbanhaven was born out of a simple insight: great
             homes shouldn't be built on confusion, hidden costs or vendor-chaos.
             Frustrated by how many homeowners get stuck with unclear quotes and

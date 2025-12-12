@@ -55,9 +55,7 @@ export default function HeroSection() {
         </p>
 
         <div className="flex w-full justify-center md:justify-start mt-6">
-          <button onClick={openConsultModal}>
-            <BookFreeConsultation />
-          </button>
+          <BookFreeConsultation onClick={openConsultModal} />
         </div>
 
         {/* ICON ROW */}
@@ -67,7 +65,7 @@ export default function HeroSection() {
             gap-4 mt-8 text-center md:text-left
           "
         >
-          <div>
+          <div className="flex flex-col sm:border-l-[3px] border-[#f95b46] sm:pl-4">
             <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               10 Years
             </span>
@@ -76,7 +74,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <div>
+          <div className="flex flex-col sm:border-l-[3px] border-[#f95b46] sm:pl-4">
             <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               45 Days
             </span>
@@ -85,7 +83,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <div>
+          <div className="flex flex-col sm:border-l-[3px] border-[#f95b46] sm:pl-4">
             <span className="text-[#f95b46] font-semibold font-['Poppins'] text-[lg] sm:text-[lg] md:text-[lg] lg:text-[2xl]">
               In-house
             </span>

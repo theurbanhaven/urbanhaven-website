@@ -37,7 +37,7 @@ export default function InspirationSection() {
               key={label}
               className="
            relative flex-shrink-0 
-           w-[448px] md:w-full 
+           w-[280px] md:w-full 
            rounded-2xl overflow-clip shadow-md 
            aspect-[4/3]
          "

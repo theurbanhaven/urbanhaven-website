@@ -34,9 +34,8 @@ export default function Button({
         px-4
         hover:scale-105
 
-        /* Responsive width-height */
-        w-[220px] h-[40px]     /* mobile + tablet */
-        lg:w-[264px] lg:h-[44px]  /* large screens */
+        w-[220px] h-[40px]     
+        lg:w-[264px] lg:h-[44px] 
         `,
         className
       )}

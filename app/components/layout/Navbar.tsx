@@ -6,6 +6,7 @@ import Image from "next/image";
 import Logo from "@/public/Logo.svg";
 import BookFreeConsultation from "../ui/Button";
 import { useModal } from "@/app/context/Modalcontext";
+import Aboutus from "@/app/aboutus/page";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +77,8 @@ export default function Navbar() {
         >
           {[
             { href: "/", label: "Home" },
-            { href: "/services", label: "Services" },
+            // { href: "/services", label: "Services" },
+            { href: "/aboutus", label: "About Us" },
             { href: "/styles", label: "Styles" }
             // { href: "/portfolio", label: "Portfolio" },
             // { href: "/process", label: "Process" },
@@ -143,12 +145,10 @@ export default function Navbar() {
           </button>
 
           {/* BOOK FREE CONSULTATION BUTTON */}
-          <button
+          <BookFreeConsultation
             onClick={openConsultModal}
-            className="flex-shrink-0" /* Match height */
-          >
-            <BookFreeConsultation />
-          </button>
+            className="flex-shrink-0"
+          />
         </div>
 
         {/* MOBILE MENU BUTTON - Centered properly */}
@@ -194,7 +194,8 @@ export default function Navbar() {
             <div className="flex flex-col p-6 gap-4">
               {[
                 { href: "/", label: "Home" },
-                { href: "/services", label: "Services" },
+                // { href: "/services", label: "Services" },
+                { href: "/aboutus", label: "Aboutus" },
                 { href: "/styles", label: "Styles" }
                 // { href: "/portfolio", label: "Portfolio" },
                 // { href: "/process", label: "Process" },
@@ -224,15 +225,12 @@ export default function Navbar() {
                   Get Estimate
                 </button>
 
-                <button
+                <BookFreeConsultation
                   onClick={() => {
                     openConsultModal();
                     setIsMenuOpen(false);
                   }}
-                  className="w-full"
-                >
-                  <BookFreeConsultation />
-                </button>
+                />
               </div>
             </div>
           </div>
