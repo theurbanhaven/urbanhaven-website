@@ -18,12 +18,12 @@ export default function TeamSection() {
     },
     {
       name: "Karan Bhardwaj",
-      role: "Co-Founder",
+      role: "Co-Founder, Head of Sales + Marketing",
       image: Karan
     },
     {
       name: "Vaibhav Bansal",
-      role: "Co-Founder",
+      role: "Co-Founder, Head of Production + Operation",
       image: Vaibhav
     }
   ];
