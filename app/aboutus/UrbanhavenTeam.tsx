@@ -36,7 +36,7 @@ export default function TeamSection() {
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
     { name: "Vanshika Maindola", role: "Interior Consultant", image: "" },
     { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
-    { name: "Pranay Kumar", role: "Software Developer", image: PranayPhoto },
+    { name: "Pranay Kumar", role: "Software Developer", image: "" },
     { name: "Sourav Kumar", role: "Graphic & UI/UX Designer", image: "" }
   ];
 
