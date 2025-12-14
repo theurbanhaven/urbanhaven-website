@@ -6,7 +6,6 @@ import { useModal } from "@/app/context/Modalcontext";
 import ModernBedroom from "@/public/LandingPageImage/Modern-Bedroom.png";
 import CloseIcon from "@/public/LandingPageImage/CloseIcon.png";
 
-// Firestore
 import { db } from "@/app/lib/firebase/config";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
