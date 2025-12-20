@@ -1,7 +1,9 @@
 "use client";
+
 import { useState } from "react";
-import Arrow from "@/public/ContactUs/Arrow.svg";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Arrow from "@/public/ContactUs/Arrow.svg";
 
 const faqData = [
   {
@@ -12,7 +14,7 @@ const faqData = [
   {
     question: "Which areas do you service?",
     answer:
-      "We currently provide services in Delhi, Noida, Greater Noida(NCR), and Ghaziabad."
+      "We currently provide services in Delhi, Noida, Greater Noida (NCR), and Ghaziabad."
   },
   {
     question: "What's the typical start-to-finish timeline?",
@@ -35,43 +37,70 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full bg-white py-8 sm:py-8 md:py-8 lg:py-16">
-      <div className="max-w-3xl w-full mx-auto px-4">
-        {/* Heading */}
-        <h2 className="text-xl sm:text-xl md:text-2xl lg:text-5xl font-semibold font-['Poppins'] text-center mb-10">
+    <div className="w-full bg-white py-8 lg:py-16">
+      <div className="max-w-3xl mx-auto px-4">
+        <h2 className="text-xl md:text-2xl lg:text-5xl font-semibold text-center mb-10 font-['Poppins']">
           Frequently Asked Questions
         </h2>
 
-        {/* FAQ Items */}
         <div className="space-y-4">
-          {faqData.map((faq, index) => (
-            <div
-              key={index}
-              className="border border-gray-200 rounded-lg bg-white shadow-sm"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex justify-between items-center p-4 text-left"
-              >
-                <span className="font-normal font-['Poppins'] text:xs sm:text-xs md:text-sm lg:text-xl text-black">
-                  {faq.question}
-                </span>
-                <Image
-                  src={Arrow}
-                  alt="arrow"
-                  className={`w-5 h-5 transform transition-transform duration-300 ${
-                    openIndex === index ? "rotate-180" : "rotate-0"
-                  }`}
-                />
-              </button>
+          {faqData.map((faq, index) => {
+            const isOpen = openIndex === index;
 
-              {openIndex === index && (
-                <div className="px-4 pb-4 font-normal font-['Poppins'] text:xs sm:text-xs md:text-sm lg:text-lg text-gray-600">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          ))}
+            return (
+              <motion.div
+                key={index}
+                initial={false}
+                animate={{
+                  backgroundColor: isOpen ? "#ffffff" : "#ffffff",
+                  boxShadow: isOpen
+                    ? "8px 8px 24px rgba(0, 0, 0, 0.12)"
+                    : "0px 0px 0px rgba(0,0,0,0)"
+                }}
+                whileHover={{
+                  boxShadow: !isOpen
+                    ? "4px 4px 16px rgba(0, 0, 0, 0.08)"
+                    : "8px 8px 24px rgba(0, 0, 0, 0.12)"
+                }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="rounded-xl overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="w-full flex justify-between items-center p-4 text-left cursor-pointer"
+                >
+                  <span className="font-['Poppins'] text-sm sm:text-base lg:text-xl text-black">
+                    {faq.question}
+                  </span>
+
+                  <motion.div
+                    animate={{ rotate: isOpen ? 45 : 0 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 20
+                    }}
+                  >
+                    <Image src={Arrow} alt="arrow" className="w-5 h-5" />
+                  </motion.div>
+                </button>
+
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.3 }}
+                      className="px-4 pb-4 font-['Poppins'] text-sm sm:text-base lg:text-lg text-gray-600"
+                    >
+                      {faq.answer}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>

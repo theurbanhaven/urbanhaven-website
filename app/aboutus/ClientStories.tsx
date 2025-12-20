@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Comment from "@/public/AboutUs/Comment.svg";
+import { motion } from "framer-motion";
 
 export default function ClientStoriesSection() {
   const stories = [
@@ -25,10 +26,8 @@ export default function ClientStoriesSection() {
   return (
     <section className="w-full py-8 sm:py-8 md:py-8 lg:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
         <h2 className="text-center heading2">Client Stories</h2>
 
-        {/* Stories */}
         <div
           className="
             grid 
@@ -39,35 +38,47 @@ export default function ClientStoriesSection() {
           "
         >
           {stories.map((story, index) => (
-            <div
+            <motion.div
               key={index}
-              className="
-                bg-white
-                rounded-2xl
-                shadow-md
-                p-8
-                border
-                border-gray-200
-                flex
-                flex-col
-                hover:scale-105
-              "
+              initial={{ opacity: 0, y: 30, backgroundColor: "#ffffff" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -3,
+                backgroundColor: "#f2f2f2",
+                boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.12)"
+              }}
+              whileTap={{
+                scale: 0.97,
+                backgroundColor: "#f2f2f2"
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: index * 0.35
+              }}
+              className="border border-[#e9e9e9] rounded-2xl p-8 cursor-pointer"
             >
-              {/* Quote Icon */}
-              <Image
-                src={Comment}
-                alt="quote"
-                width={30}
-                height={30}
-                className="mb-4"
-              />
+              <motion.div
+                whileHover={{ scale: 1.15, rotate: 3 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400 }}
+                className="w-16 h-16 flex items-center justify-center mb-4"
+              >
+                <Image
+                  src={Comment}
+                  alt="quote"
+                  width={30}
+                  height={30}
+                  className="mb-4"
+                />
+              </motion.div>
 
-              {/* Story Text */}
               <p className="text-sm leading-relaxed text-black font-normal font-['Poppins'] flex-grow">
                 {story.text}
               </p>
 
-              {/* User Info */}
               <div className="mt-auto pt-6">
                 <p className="text-sm font-normal font-['Poppins'] text-black">
                   {story.name}
@@ -76,7 +87,7 @@ export default function ClientStoriesSection() {
                   {story.location}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

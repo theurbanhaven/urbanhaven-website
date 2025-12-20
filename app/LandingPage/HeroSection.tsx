@@ -3,13 +3,13 @@ import Image from "next/image";
 import HomeImage from "@/public/LandingPageImage/Home.png";
 import BookFreeConsultation from "../components/ui/Button";
 import { useModal } from "@/app/context/Modalcontext";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   const { openConsultModal } = useModal();
 
   return (
     <section className="w-full grid grid-cols-1 md:grid-cols-2 pt-16">
-      {/* IMAGE SECTION */}
       <div
         className="
      relative w-full 
@@ -29,7 +29,6 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* CONTENT SECTION */}
       <div
         className="
           flex flex-col justify-center 
@@ -55,10 +54,15 @@ export default function HeroSection() {
         </p>
 
         <div className="flex w-full justify-center md:justify-start mt-6">
-          <BookFreeConsultation onClick={openConsultModal} />
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+          >
+            <BookFreeConsultation onClick={openConsultModal} />
+          </motion.div>
         </div>
 
-        {/* ICON ROW */}
         <div
           className="
             w-full grid grid-cols-1 sm:grid-cols-3 

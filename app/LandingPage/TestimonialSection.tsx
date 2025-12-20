@@ -3,6 +3,7 @@
 import Image from "next/image";
 import StarIcon from "@/public/LandingPageImage/Star.svg";
 import "swiper/css";
+import { motion, Variants, easeOut } from "framer-motion";
 
 export default function TestimonialSection() {
   const testimonials = [
@@ -40,9 +41,28 @@ export default function TestimonialSection() {
     { number: "In-house", label: "Manufacturing" }
   ];
 
+  const containerVariant = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: easeOut
+      }
+    }
+  };
   return (
     <section className="w-full min-h-[380px]">
-      {/* Heading */}
       <h2 className="heading2 text-center mb-6 md:mb-6 lg:mb-8">
         Why choose us
       </h2>
@@ -79,20 +99,26 @@ export default function TestimonialSection() {
         </div>
       </div>
 
-      {/* Statistics Row */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-10 mt-6 md:mt-6 lg:mt-8 justify-items-center text-center mx-auto w-full max-w-[1100px]">
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-10 mt-6 md:mt-6 lg:mt-8 justify-items-center text-center mx-auto w-full max-w-[1100px]"
+      >
         {stats.map((stat, index) => (
-          <div
+          <motion.div
             key={index}
+            variants={itemVariants}
             className="flex flex-col items-center justify-center"
           >
             <h3 className="text-xl lg:text-[32px] font-bold text-[#F95B46]">
               {stat.number}
             </h3>
             <p className="text-sm text-[#666666]">{stat.label}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

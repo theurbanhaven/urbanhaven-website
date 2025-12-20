@@ -1,19 +1,17 @@
 "use client";
 import Image from "next/image";
 import UrbanhavenLogo from "@/public/Logo.svg";
-import FacebookLogo from "@/public/LandingPageImage/facebook.png";
+import FacebookIcon from "@/app/components/Icons/FacebookIcon";
+import InstagramIcon from "@/app/components/Icons/InstagramIcon";
 import Phone from "@/public/LandingPageImage/phone.png";
 import Mail from "@/public/LandingPageImage/Mail.png";
 import Location from "@/public/LandingPageImage/Location.png";
-import InstagramLogo from "@/public/LandingPageImage/Instagram.svg";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white">
-      {/* Top Section */}
+    <footer className="w-full">
       <div className="max-w-[1280px] mx-auto p-12 grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-0">
-        {/* Logo & Text */}
         <div className="space-y-4">
           <Image src={UrbanhavenLogo} alt="Urbanhaven Logo" className="w-44" />
           <p className="text-sm text-[#666666] leading-5">
@@ -21,12 +19,11 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Services */}
         <div>
           <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Services
           </h4>
-          <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666]">
+          <ul className="space-y-4 text-sm font-normal font-['Poppins'] text-[#666666] ">
             <li>Full Home Interiors</li>
             <li>Modular Kitchens</li>
             <li>Bedrooms & Living</li>
@@ -34,7 +31,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Quick Links
@@ -55,7 +51,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h4 className="font-normal font-['Poppins'] text-[#0f0f0f] text-base mb-4">
             Contact Us
@@ -95,47 +90,42 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Section */}
       <div className="border-t border-[#e6e6e6]">
         <div className="max-w-[1280px] mx-auto p-8 flex flex-col md:flex-row items-center justify-between">
-          {/* Social Icons */}
           <div className="flex items-center gap-4">
             <a
               href="https://www.facebook.com/p/Urban-Haven-61579852742786/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                src={FacebookLogo}
-                className="w-5 h-5 cursor-pointer hover:opacity-70"
-                alt="facebook"
-              />
+              <FacebookIcon />
             </a>
 
             <a
               href="https://www.instagram.com/urbanhaven_01/"
               target="_blank"
               rel="noopener noreferrer"
+              className="group flex items-center justify-center rounded-2xl bg-white transition-all duration-300 hover:scale-110"
             >
-              <Image
-                src={InstagramLogo}
-                className="w-5 h-5 cursor-pointer hover:opacity-70"
-                alt="instagram"
-              />
+              <InstagramIcon />
             </a>
           </div>
 
-          {/* Policies */}
-          <div className="flex items-center gap-6 text-sm text-[#666666] font-normal font-['Poppins'] mt-3 md:mt-0">
-            <Link href="/privacypolicy" className="hover:text-black">
+          <div className="flex items-center gap-6 text-sm font-normal font-['Poppins'] mt-3 md:mt-0">
+            <Link
+              href="/privacypolicy"
+              className="text-[#666666] hover:text-black"
+            >
               Privacy Policy
             </Link>
-            <Link href="/termscondition" className="hover:text-black">
+            <Link
+              href="/termscondition"
+              className="text-[#666666] hover:text-black"
+            >
               Terms & Conditions
             </Link>
           </div>
 
-          {/* Copyright */}
           <p className="text-sm text-[#666666] text-center font-normal font-['Poppins'] mt-3 md:mt-0">
             © 2025 UrbanHaven. All rights reserved.
           </p>

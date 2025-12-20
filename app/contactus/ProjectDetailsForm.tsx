@@ -73,7 +73,20 @@ export default function ProjectDetailsForm() {
 
   return (
     <div className="w-full flex justify-center bg-white">
-      <div className="w-full max-w-3xl py-8 lg:py-16 px-6 sm:px-6 md:px-6 lg:px-16">
+      <div
+        className="w-full max-w-3xl mx-auto
+    py-8 sm:py-10 md:py-12 lg:py-16
+    px-4 sm:px-6 md:px-10 lg:px-16
+    bg-white
+    rounded-2xl
+    border-0
+    lg:border
+    lg:border-gray-200
+    transition-all duration-300
+    hover:bg-gray-50
+    lg:hover:shadow-xl
+  "
+      >
         <h1 className="text-center font-semibold font-['Poppins'] text-black text-2xl sm:text-2xl md:text-2xl lg:text-5xl">
           Tell Us About Your Project
         </h1>
@@ -85,7 +98,7 @@ export default function ProjectDetailsForm() {
 
         <form
           onSubmit={handleSubmit}
-          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 "
         >
           {/* Name */}
           <div className="flex flex-col">
@@ -257,7 +270,20 @@ export default function ProjectDetailsForm() {
 
           {/* Submit */}
           <div className="md:col-span-2">
-            <button className="w-full py-4 px-6 bg-[#f95b46] text-white font-medium font-['Poppins'] rounded-md cursor-pointer hover:opacity-90 hover:scale-105">
+            <button
+              className="
+  w-full py-4 px-6
+  bg-[#f95b46]
+  text-white
+  font-medium
+  font-['Poppins']
+  rounded-md
+  transition-all duration-300
+  hover:bg-[#e94b36]
+  hover:shadow-lg
+  active:scale-[0.98]
+"
+            >
               Submit Your Request
             </button>
           </div>

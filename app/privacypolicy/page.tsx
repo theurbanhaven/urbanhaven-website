@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/app/components/layout/Navbar";
 import CTASection from "@/app/components/Common/CTASection";
 import Footer from "@/app/components/layout/Footer";
@@ -6,6 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Navbar />
+
       <div className="flex min-h-screen justify-center py-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
         <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-white">
           <div className="flex justify-center bg-[#ffffff] px-4 py-6">

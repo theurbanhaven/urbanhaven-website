@@ -6,7 +6,7 @@ import Image from "next/image";
 import Logo from "@/public/Logo.svg";
 import BookFreeConsultation from "../ui/Button";
 import { useModal } from "@/app/context/Modalcontext";
-import Aboutus from "@/app/aboutus/page";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -145,10 +145,16 @@ export default function Navbar() {
           </button>
 
           {/* BOOK FREE CONSULTATION BUTTON */}
-          <BookFreeConsultation
-            onClick={openConsultModal}
-            className="flex-shrink-0"
-          />
+          <motion.div
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.5 }}
+          >
+            <BookFreeConsultation
+              onClick={openConsultModal}
+              className="flex-shrink-0"
+            />
+          </motion.div>
         </div>
 
         {/* MOBILE MENU BUTTON - Centered properly */}
@@ -163,35 +169,43 @@ export default function Navbar() {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? "✕" : "☰"}
+          <motion.span
+            animate={{ rotate: isMenuOpen ? 90 : 0 }}
+            transition={{ duration: 0.25 }}
+            className="inline-block"
+          >
+            {isMenuOpen ? "✕" : "☰"}
+          </motion.span>
         </button>
       </div>
 
       {/* MOBILE MENU */}
       {isMenuOpen && (
-        <div
-          className="
-          lg:hidden 
-          bg-white 
-          w-full 
-          px-4 
-          py-4 
-          shadow-lg
-          border-t border-gray-100
-        "
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          className="lg:hidden"
         >
           {/* FULL-SCREEN MOBILE MENU */}
           <div
             className={`
-    fixed top-[64px] right-0
+    fixed top-[80px] right-0
     h-[calc(100vh-64px)] w-full
-    bg-white 
+    bg-white
     z-40 
     transform transition-transform duration-300
     ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
   `}
           >
-            <div className="flex flex-col p-6 gap-4">
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 260, damping: 30 }}
+              className="fixed right-0 h-[calc(100vh-64px)] w-full bg-white z-40"
+            >
               {[
                 { href: "/", label: "Home" },
                 // { href: "/services", label: "Services" },
@@ -206,7 +220,7 @@ export default function Navbar() {
                   href={href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`
-          block py-3  text-[20px] rounded-md font-medium font-['Poppins']
+          block py-3 text-[20px] rounded-md font-medium font-['Poppins'] text-center
           ${isActive(href) ? "text-[#f95b46]" : "text-gray-700"}
         `}
                 >
@@ -214,7 +228,7 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <div className="mt-6 flex flex-col gap-3">
+              <div className="mt-6 flex flex-col gap-3 justify-center items-center">
                 <button
                   className="
           w-[220px] h-10 border border-[#f95b46] px-4 py-2
@@ -232,9 +246,9 @@ export default function Navbar() {
                   }}
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 import Craftmanship from "@/public/AboutUs/Craftmanship.svg";
 import Mission from "@/public/AboutUs/Mission.svg";
 import Personalisation from "@/public/AboutUs/Personalisation.svg";
@@ -56,30 +56,43 @@ export default function MissionVisionValues() {
           Our guiding principles that shape everything we do
         </p>
 
-        {/* FIRST ROW → Mission + Vision */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-1 gap-8">
           {firstRow.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="
-                bg-white 
-                border border-[#e9e9e9] 
-                rounded-2xl 
-                p-8 
-                shadow-sm 
-                hover:shadow-md 
-                hover:scale-105
-                transition-all
-              "
+              initial={{ opacity: 0, y: 30, backgroundColor: "#ffffff" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -3,
+                backgroundColor: "#f2f2f2",
+                boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.12)"
+              }}
+              whileTap={{
+                scale: 0.97,
+                backgroundColor: "#f2f2f2"
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: index * 0.35
+              }}
+              className="border border-[#e9e9e9] rounded-2xl p-8 cursor-pointer"
             >
-              <div className="w-16 h-16 rounded-full bg-[#f2f2f2] flex items-center justify-center mx-auto mb-4">
+              <motion.div
+                whileHover={{ scale: 1.15, rotate: 3 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400 }}
+                className="w-16 h-16 rounded-full bg-[#f2f2f2] flex items-center justify-center mx-auto mb-4"
+              >
                 <Image
                   src={item.icon}
                   alt={item.title}
                   width={28}
                   height={28}
                 />
-              </div>
+              </motion.div>
 
               <h3 className="text-center text-xl font-semibold text-[#0f0f0f] font-['Poppins']">
                 {item.title}
@@ -88,34 +101,47 @@ export default function MissionVisionValues() {
               <p className="text-center text-[#555] text-base leading-6 mt-3 font-['Poppins']">
                 {item.text}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        {/* SECOND ROW → Remaining 4 Cards */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {secondRow.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="
-                bg-white 
-                border border-[#e9e9e9] 
-                rounded-2xl 
-                p-8 
-                shadow-sm 
-                hover:shadow-md 
-                hover:scale-105
-                transition-all
-              "
+              initial={{ opacity: 0, y: 30, backgroundColor: "#ffffff" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -3,
+                backgroundColor: "#f2f2f2",
+                boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.12)"
+              }}
+              whileTap={{
+                scale: 0.97,
+                backgroundColor: "#f2f2f2"
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: index * 0.35
+              }}
+              className="border border-[#e9e9e9] rounded-2xl p-8 cursor-pointer"
             >
-              <div className="w-16 h-16 rounded-full bg-[#f2f2f2] flex items-center justify-center mb-4 mx-auto">
+              <motion.div
+                whileHover={{ scale: 1.15, rotate: 3 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400 }}
+                className="w-16 h-16 rounded-full bg-[#f2f2f2] flex items-center justify-center mb-4 mx-auto"
+              >
                 <Image
                   src={item.icon}
                   alt={item.title}
                   width={28}
                   height={28}
                 />
-              </div>
+              </motion.div>
 
               <h3 className="text-center text-xl font-semibold text-[#0f0f0f] font-['Poppins']">
                 {item.title}
@@ -124,7 +150,7 @@ export default function MissionVisionValues() {
               <p className="text-center text-[#555] text-base leading-6 mt-3 font-['Poppins']">
                 {item.text}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

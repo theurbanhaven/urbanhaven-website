@@ -118,5 +118,38 @@
   }
 }
 
+@keyframes whiteRedToggle {
+  0%, 50% {
+    color: #ffffff;
+  }
+  100% {
+    color: #f95b46; 
+  }
+}
+
+.animate-white-red {
+  animation: whiteRedToggle 2s infinite alternate;
+}
+
+@keyframes bgBlueGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-bg-gradient {
+  background: linear-gradient(
+    120deg,
+    #332959,
+    #4f46e5,
+    #60a5fa
+  );
+  background-size: 200% 200%;
+  animation: bgBlueGradient 4s ease-in-out infinite alternate;
+}
+
 
 

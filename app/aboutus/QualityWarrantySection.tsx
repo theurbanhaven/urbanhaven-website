@@ -4,6 +4,7 @@ import Image from "next/image";
 import Tick from "@/public/AboutUs/Tick.svg";
 import Quality from "@/public/AboutUs/Quality.svg";
 import Warranty from "@/public/AboutUs/Mission.svg";
+import { motion } from "framer-motion";
 
 export default function QualityWarrantySection() {
   const items = [
@@ -27,12 +28,10 @@ export default function QualityWarrantySection() {
   return (
     <section className="w-full py-8 sm:py-8 md:py-8 lg:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Section Heading */}
         <h2 className="text-center heading2">
           Quality, Responsibility & Warranty
         </h2>
 
-        {/* Cards */}
         <div
           className="
             grid grid-cols-1 
@@ -42,42 +41,50 @@ export default function QualityWarrantySection() {
           "
         >
           {items.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="
-                bg-white 
-                rounded-2xl 
-                shadow-md 
-                p-8 
-                flex 
-                flex-col 
-                items-center 
-                text-center
-                border 
-                border-gray-200
-                hover:scale-105
-              "
+              initial={{ opacity: 0, y: 30, backgroundColor: "#ffffff" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -3,
+                backgroundColor: "#f2f2f2",
+                boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.12)"
+              }}
+              whileTap={{
+                scale: 0.97,
+                backgroundColor: "#f2f2f2"
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: index * 0.35
+              }}
+              className="border border-[#e9e9e9] rounded-2xl p-8 cursor-pointer"
             >
-              {/* Icon */}
-              <div className="w-14 h-14 rounded-full bg-[#f2f2f2]  flex items-center justify-center mb-4 ">
+              <motion.div
+                whileHover={{ scale: 1.15, rotate: 3 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400 }}
+                className="w-16 h-16 rounded-full bg-[#f2f2f2] flex items-center justify-center mb-4 mx-auto"
+              >
                 <Image
                   src={item.icon}
                   alt={item.title}
                   width={30}
                   height={30}
                 />
-              </div>
+              </motion.div>
 
-              {/* Title */}
               <h3 className="text-lg md:text-xl font-normal text-black font-['Poppins']">
                 {item.title}
               </h3>
 
-              {/* Description */}
               <p className="text-base text-[#495057] mt-2 leading-relaxed font-normal font-['Poppins']">
                 {item.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

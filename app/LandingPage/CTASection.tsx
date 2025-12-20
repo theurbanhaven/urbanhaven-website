@@ -2,6 +2,7 @@
 
 import BookFreeConsultation from "@/app/components/ui/Button";
 import { useModal } from "@/app/context/Modalcontext";
+import { motion } from "framer-motion";
 
 export default function CTASection() {
   const { openConsultModal } = useModal();
@@ -17,8 +18,13 @@ export default function CTASection() {
         Let's create your dream home together. Book a free consultation with our
         design experts today.
       </p>
-
-      <BookFreeConsultation onClick={openConsultModal} className="mt-8" />
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ duration: 0.2 }}
+      >
+        <BookFreeConsultation onClick={openConsultModal} className="mt-8" />
+      </motion.div>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 
 import Portfolio from "@/app/components/ui/PortfolioButton";
 import { useModal } from "@/app/context/Modalcontext";
+import { motion } from "framer-motion";
 
 export default function CTASection() {
   return (
@@ -17,11 +18,13 @@ export default function CTASection() {
         love returning to.
       </p>
 
-      {/* Button */}
-      {/* <button>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ duration: 0.2 }}
+      >
         <Portfolio className="mt-8" />
-      </button> */}
-      <Portfolio className="mt-8" />
+      </motion.div>
     </section>
   );
 }
