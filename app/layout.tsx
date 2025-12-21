@@ -11,6 +11,9 @@ export const metadata = {
     "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
   icons: {
     icon: "/favicon.ico"
+  },
+  verification: {
+    google: "TU_AJjcIMNqtXXxBNtH_hBoAhwzE8muEqf-ejZOvqLY"
   }
 };
 
@@ -22,10 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="TU_AJjcIMNqtXXxBNtH_hBoAhwzE8muEqf-ejZOvqLY"
-        />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
           rel="stylesheet"
