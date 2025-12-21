@@ -67,7 +67,7 @@ export default function FAQSection() {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex justify-between items-center p-4 text-left cursor-pointer"
+                  className="w-full flex justify-between items-start p-4 text-left cursor-pointer"
                 >
                   <span className="font-['Poppins'] text-sm sm:text-base lg:text-xl text-black">
                     {faq.question}
@@ -80,6 +80,7 @@ export default function FAQSection() {
                       stiffness: 300,
                       damping: 20
                     }}
+                    className="flex-shrink-0"
                   >
                     <Image src={Arrow} alt="arrow" className="w-5 h-5" />
                   </motion.div>

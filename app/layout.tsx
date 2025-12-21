@@ -8,7 +8,10 @@ import { Toaster } from "react-hot-toast";
 export const metadata = {
   title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
   description:
-    "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services."
+    "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({
@@ -23,7 +26,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)

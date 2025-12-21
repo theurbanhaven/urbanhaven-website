@@ -191,7 +191,7 @@ export default function Navbar() {
           {/* FULL-SCREEN MOBILE MENU */}
           <div
             className={`
-    fixed top-[80px] right-0
+    fixed top-[72px] right-0
     h-[calc(100vh-64px)] w-full
     bg-white
     z-40 

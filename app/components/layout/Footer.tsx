@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import UrbanhavenLogo from "@/public/Logo.svg";
-import FacebookIcon from "@/app/components/Icons/FacebookIcon";
-import InstagramIcon from "@/app/components/Icons/InstagramIcon";
 import Phone from "@/public/LandingPageImage/phone.png";
 import Mail from "@/public/LandingPageImage/Mail.png";
 import Location from "@/public/LandingPageImage/Location.png";
@@ -97,17 +95,28 @@ export default function Footer() {
               href="https://www.facebook.com/p/Urban-Haven-61579852742786/"
               target="_blank"
               rel="noopener noreferrer"
+              className="group flex items-center justify-center rounded-2xl bg-white transition-all duration-300 hover:scale-110 active:scale-110 focus-visible:scale-110"
             >
-              <FacebookIcon />
+              <Image
+                src="https://assets-v2.scaler.com/assets/scaler/svg/footer-facebook-logo-1f6a9a1dfe1c0a07ac4aebc36dd622469615763c39b0af223b296365dd6959b4.svg"
+                alt="Facebook-Icon"
+                width={28}
+                height={28}
+              />
             </a>
 
             <a
               href="https://www.instagram.com/urbanhaven_01/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center rounded-2xl bg-white transition-all duration-300 hover:scale-110"
+              className="group flex items-center justify-center rounded-2xl bg-white transition-all duration-300 active:scale-110 focus-visible:scale-110"
             >
-              <InstagramIcon />
+              <Image
+                src="https://assets-v2.scaler.com/assets/scaler/svg/footer-instagram-logo-2bedbafdc3c2430059f45d372526c5fa13ba08c54ac068a7a74d3b6f3637d778.svg"
+                alt="Instagram-Icon"
+                width={28}
+                height={28}
+              />
             </a>
           </div>
 
