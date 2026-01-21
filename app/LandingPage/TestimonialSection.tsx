@@ -72,7 +72,7 @@ export default function TestimonialSection() {
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
               key={index}
-              className="w-[316px] md:w-[316px] lg:w-[426px] testimonial-card border border-gray-200 rounded-xl p-6 bg-white shadow-sm flex-shrink-0"
+              className="w-[316px] md:w-[316px] lg:w-[426px] testimonial-card border border-gray-200 rounded-xl p-6 bg-white shadow-sm flex-shrink-0 flex flex-col"
             >
               <div className="flex gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
@@ -85,7 +85,7 @@ export default function TestimonialSection() {
                 ))}
               </div>
 
-              <p className="text-[#666666] text-base font-normal font-['Poppins'] leading-6 mb-4">
+              <p className="text-[#666666] text-base font-normal font-['Poppins'] leading-6 mb-4 flex-grow">
                 {item.text}
               </p>
               <p className="text-[#0f0f0f] text-base font-semibold font-['Poppins'] leading-6">
@@ -98,24 +98,33 @@ export default function TestimonialSection() {
           ))}
         </div>
       </div>
-
       <motion.div
         variants={containerVariant}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-10 mt-6 md:mt-6 lg:mt-8 justify-items-center text-center mx-auto w-full max-w-[1100px]"
+        className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-10 mt-6 md:mt-6 lg:mt-8 text-center w-full px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[200px]"
       >
         {stats.map((stat, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
-            className="flex flex-col items-center justify-center"
+            className={`
+        flex flex-col justify-center
+        justify-self-center text-center
+        ${
+          index === 0
+            ? "md:justify-self-start md:text-left"
+            : index === stats.length - 1
+            ? "md:justify-self-end md:text-right"
+            : "md:justify-self-center md:text-center"
+        }
+      `}
           >
             <h3 className="text-xl lg:text-[32px] font-bold text-[#F95B46]">
               {stat.number}
             </h3>
-            <p className="text-sm text-[#666666]">{stat.label}</p>
+            <p className="text-sm text-[#666666] text-center">{stat.label}</p>
           </motion.div>
         ))}
       </motion.div>

@@ -16,13 +16,13 @@ export default function Styles() {
       <section className="w-full mt-19">
         <HeroSection />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <StyleCards />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <RealHomeStyle />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <WhyWorks />
       </section>
       <section className="w-full">

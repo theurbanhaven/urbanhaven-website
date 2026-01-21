@@ -30,12 +30,9 @@ export default function Button({
         hover:opacity-90 
         transition 
         whitespace-nowrap
-        py-2
-        px-4
-        hover:scale-105
-
-        w-[220px] h-[40px]     
-        lg:w-[264px] lg:h-[44px] 
+        px-5 xl:px-6
+        py-2.5
+        min-h-[43px]
         `,
         className
       )}

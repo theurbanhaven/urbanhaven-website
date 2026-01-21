@@ -29,8 +29,8 @@ export default function HeroSection() {
         <div
           className="
     flex mt-6
-    flex-col items-center gap-4     /* Mobile: vertical + centered */
-    sm:flex-row sm:justify-center   /* Tablet/Desktop: side-by-side + centered */
+    flex-col items-center gap-4    
+    sm:flex-row sm:justify-center   
   "
         >
           <StyleQuizButton />

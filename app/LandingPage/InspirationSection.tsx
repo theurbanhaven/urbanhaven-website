@@ -18,7 +18,7 @@ const inspirations = [
 export default function InspirationSection() {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-4 xl:px-45">
+      <div className="max-w-full ">
         {/* Heading */}
         <h2 className="heading2 text-center">
           Inspiration that helps you design the perfect home
@@ -46,7 +46,7 @@ export default function InspirationSection() {
                 src={src}
                 alt={label}
                 fill
-                className="object-cover" // NO CROP — FULL IMAGE VISIBLE
+                className="object-cover"
               />
 
               {/* Gradient */}

@@ -14,6 +14,32 @@ export const metadata = {
   },
   verification: {
     google: "TU_AJjcIMNqtXXxBNtH_hBoAhwzE8muEqf-ejZOvqLY"
+  },
+
+  openGraph: {
+    title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+    description:
+      "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
+    url: "https://theurbanhaven.in/",
+    siteName: "UrbanHaven",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "UrbanHaven Interior Design"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+    description:
+      "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
+    images: ["/og-image.png"]
   }
 };
 

@@ -29,142 +29,146 @@ export default function Navbar() {
       <div
         className="
         w-full
-        mx-auto 
-        px-3 sm:px-4 
-        md:px-6 
-        lg:px-6
+        px-4 sm:px-6
+        md:px-8
+        lg:px-[60px]
+        xl:px-[80px]
+        2xl:px-[200px]
+        py-[18px]
         flex 
         items-center 
         justify-between 
-        h-19 
-        min-h-[64px]
-        max-h-[72px] 
-        gap-2 sm:gap-3 
+        h-[79px]
+        min-h-[72px]
+        max-h-[80px]       
       "
       >
-        {/* LOGO - Proper sizing */}
-        <div className="flex items-center flex-shrink-0">
+        {/* LOGO - Left Side */}
+        <div className="flex items-center justify-start flex-shrink-0">
           <Image
             src={Logo}
             alt="Urbanhaven Logo"
             className="
-              h-9 /* 36px height */
-              w-auto 
-              min-w-[110px] /* Minimum width */
-              max-w-[150px] /* Maximum width */
+              h-8
+              w-auto
+              min-w-[100px]
+              max-w-[160px]
               object-contain
-            "
+               h-[37px]"
             priority
-            width={150}
-            height={36}
+            width={130}
+            height={32}
           />
         </div>
 
-        {/* NAV LINKS (Desktop) - Compact but spaced */}
         <div
           className="
           hidden 
           lg:flex 
           items-center 
-          gap-2 xl:gap-3 /* Reduced gap */
-          mx-2 lg:mx-4 
-          flex-shrink-0 /* Takes available space */
-          justify-center
-          min-w-0
-          font-normal
-          font-['Poppins']
-        "
+          ml-auto gap-4"
         >
-          {[
-            { href: "/", label: "Home" },
-            // { href: "/services", label: "Services" },
-            { href: "/aboutus", label: "About Us" },
-            { href: "/styles", label: "Styles" }
-            // { href: "/portfolio", label: "Portfolio" },
-            // { href: "/process", label: "Process" },
-            // { href: "/blog", label: "Blog" }
-          ].map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className={`
-                whitespace-nowrap 
-                px-2 xl:px-3 
-                py-1 
-                transition                
-                text-[14px] xl:text-[16px] /* Slightly smaller text */
-                hover:text-[#f95b46]
-                font-normal 
-                font-['Poppins']
-                ${
-                  isActive(href)
-                    ? "text-[#f95b46] font-semibold"
-                    : "text-gray-700"
-                }
-              `}
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
+          <div className="flex items-center justify-center gap-1 xl:gap-2 2xl:gap-3">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/aboutus", label: "About Us" },
+              { href: "/styles", label: "Styles" },
+              { href: "/portfolio", label: "Portfolio" },
+              { href: "/process", label: "Process" },
+              { href: "/blog", label: "Blog" }
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`
+                  whitespace-nowrap 
+                  px-1 xl:px-2
+                  py-2 
+                  transition                
+                  text-[12px] 
+                  lg:text-[13px] 
+                  xl:text-[14px]
+                  2xl:text-[15px]
+                  hover:text-[#f95b46]
+                  text-base
+                  font-medium 
+                  font-['Poppins']
+                  ${
+                    isActive(href)
+                      ? "text-[#f95b46] font-semibold"
+                      : "text-[#212121]"
+                  }
+                `}
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
 
-        {/* BUTTONS (Desktop) - Better button sizing */}
-        <div
-          className="
-          hidden 
-          lg:flex 
-          items-center 
-          gap-3 /* Reduced gap */
-          ml-2
-        "
-        >
-          {/* GET ESTIMATE BUTTON - Compact */}
+          {/* Buttons on Right Side - More compact */}
+
           <button
             className="
+              ml-auto
               whitespace-nowrap 
-              h-11
-              px-4 
-              py-[10px]
+              h-[43px]
+              px-2 xl:px-4
+              py-2
               rounded-md 
               border 
               border-[#f95b46] 
               text-[#f95b46] 
-              text-[14px] 
+              text-lg
               font-medium
               font-['Poppins']
               hover:bg-[#f95b46] 
               hover:text-white 
               transition-colors
               duration-200
-              min-w-[120px] 
-              max-w-[140px] 
+              min-w-[90px] 
+              lg:min-w-[100px]
+              xl:min-w-[110px]
+              2xl:min-w-[148px]
               flex items-center justify-center
+              flex-shrink-0
             "
           >
             Get Estimate
           </button>
 
-          {/* BOOK FREE CONSULTATION BUTTON */}
           <motion.div
-            whileHover={{ scale: 1.01 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.2 }}
+            className="flex-shrink-0"
           >
             <BookFreeConsultation
               onClick={openConsultModal}
-              className="flex-shrink-0"
+              className="
+                px-2 xl:px-4
+                py-2
+                text-lg             
+                min-w-[130px]
+                lg:min-w-[140px]
+                xl:min-w-[150px]
+                2xl:min-w-[241px]
+                h-[43px]
+                flex-shrink-0
+               
+              "
             />
           </motion.div>
         </div>
 
-        {/* MOBILE MENU BUTTON - Centered properly */}
+        {/* Mobile Menu Button */}
         <button
           className="
             lg:hidden 
             text-2xl 
             text-[#f95b46] 
             flex items-center justify-end
-            w-10 h-10 /* Square button */
+            w-10 h-10
+            flex-shrink-0
           "
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -179,7 +183,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* MOBILE MENU */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -188,53 +192,45 @@ export default function Navbar() {
           transition={{ duration: 0.25 }}
           className="lg:hidden"
         >
-          {/* FULL-SCREEN MOBILE MENU */}
           <div
             className={`
-    fixed top-[72px] right-0
-    h-[calc(100vh-64px)] w-full
-    bg-white
-    z-40 
-    transform transition-transform duration-300
-    ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
-  `}
+              fixed top-[80px] left-0
+              h-[calc(100vh-80px)] w-full
+              bg-white
+              z-40 
+              overflow-y-auto
+            `}
           >
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 260, damping: 30 }}
-              className="fixed right-0 h-[calc(100vh-64px)] w-full bg-white z-40"
-            >
+            <div className="flex flex-col p-6 space-y-4">
               {[
                 { href: "/", label: "Home" },
-                // { href: "/services", label: "Services" },
-                { href: "/aboutus", label: "Aboutus" },
-                { href: "/styles", label: "Styles" }
-                // { href: "/portfolio", label: "Portfolio" },
-                // { href: "/process", label: "Process" },
-                // { href: "/blog", label: "Blog" }
+                { href: "/aboutus", label: "About Us" },
+                { href: "/styles", label: "Styles" },
+                { href: "/portfolio", label: "Portfolio" },
+                { href: "/process", label: "Process" },
+                { href: "/blog", label: "Blog" }
               ].map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`
-          block py-3 text-[20px] rounded-md font-medium font-['Poppins'] text-center
-          ${isActive(href) ? "text-[#f95b46]" : "text-gray-700"}
-        `}
+                    block py-4 text-[18px] font-medium font-['Poppins'] 
+                    border-b border-gray-100
+                    ${isActive(href) ? "text-[#f95b46]" : "text-gray-700"}
+                  `}
                 >
                   {label}
                 </Link>
               ))}
 
-              <div className="mt-6 flex flex-col gap-3 justify-center items-center">
+              <div className="mt-8 flex flex-col gap-4">
                 <button
                   className="
-          w-[220px] h-10 border border-[#f95b46] px-4 py-2
-          text-[#f95b46] rounded-md text-[16px] font-medium
-          hover:bg-[#f95b46] hover:text-white transition-colors
-        "
+                    w-full h-12 border border-[#f95b46] px-4 py-3
+                    text-[#f95b46] rounded-md text-[16px] font-medium
+                    hover:bg-[#f95b46] hover:text-white transition-colors
+                  "
                 >
                   Get Estimate
                 </button>
@@ -244,9 +240,10 @@ export default function Navbar() {
                     openConsultModal();
                     setIsMenuOpen(false);
                   }}
+                  className="h-12 text-[16px]"
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       )}

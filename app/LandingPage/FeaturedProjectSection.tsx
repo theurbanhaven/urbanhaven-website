@@ -19,7 +19,7 @@ const featured = [
 export default function FeaturedProjectSection() {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-4 xl:px-45">
+      <div className="max-w-full ">
         <h2 className="heading2 text-center">
           Homes We’ve Transformed - A Showcase of Our Work
         </h2>

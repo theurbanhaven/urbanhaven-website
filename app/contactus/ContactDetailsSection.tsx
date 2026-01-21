@@ -37,7 +37,7 @@ export default function ContactInfoSection() {
 
   return (
     <section className="w-full py-[32px] sm:py-[32px] md:py-[32px] lg:py-[64px]">
-      <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-20 xl:px-32">
+      <div className="max-w-full">
         {/* Heading */}
         <h2
           className="text-[#0f0f0f] text-center font-bold font-['Poppins']

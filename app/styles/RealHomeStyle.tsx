@@ -17,7 +17,7 @@ export default function RealHomeStyle() {
   ];
 
   return (
-    <section className="w-full px-6 sm:px-10 md:px-16 lg:px-[240px]  py-8 sm:py-8 md:py-8 lg:py-16">
+    <section className="w-full">
       <h2 className="heading2-style text-center mb-4">
         See These Styles in Real Homes
       </h2>

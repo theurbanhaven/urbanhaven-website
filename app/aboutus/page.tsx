@@ -22,22 +22,22 @@ export default function Aboutus() {
       <section className="w-full">
         <OurStory />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <MissionVisionValues />
       </section>
       <section className="w-full">
         <WhatWeOffer />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <ReachImpact />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <UrbanhavenTeam />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <QualityWarrantySection />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <ClientStories />
       </section>
       <section className="w-full">

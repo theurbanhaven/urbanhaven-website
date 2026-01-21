@@ -1,7 +1,7 @@
 export default function VisitUsMap() {
   return (
     <div className="w-full flex justify-center py-8 sm:py-8 md:py-8 lg:py-16">
-      <div className="w-full px-4 sm:px-4 md:px-14 lg:px-[337px]">
+      <div className="w-full">
         <h2 className="text-center text-2xl sm:text-2xl md:text-2xl lg:text-5xl font-semibold font-['Poppins']">
           Visit Us
         </h2>

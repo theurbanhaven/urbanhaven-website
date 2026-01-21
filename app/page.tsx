@@ -18,16 +18,16 @@ export default function Home() {
       <section className="w-full">
         <HeroSection />
       </section>
-      <section className="w-full p-8 md:p-12 lg:p-16">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[200px]">
         <ServicesSection />
       </section>
-      <section className="w-full p-8 md:p-12 lg:p-16">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[200px]">
         <InspirationSection />
       </section>
-      <section className="w-full p-8 md:p-12 lg:p-16">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[200px]">
         <FeaturedProjectSection />
       </section>
-      <section className="w-full p-8 md:p-12 lg:p-16">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[200px]">
         <ProcessSection />
       </section>
       <section className="w-full py-8 md:py-12 lg:py-16">

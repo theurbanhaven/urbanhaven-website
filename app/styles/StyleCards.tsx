@@ -17,7 +17,7 @@ export default function StyleCards() {
   ];
 
   return (
-    <section className="w-full px-6 sm:px-10 md:px-16 lg:px-[240px] sm:py-8 md:py-8 lg:py-16">
+    <section className="w-full ">
       <h2 className="heading2-style text-center mb-6 lg:mb-12">
         Explore Our Curated Styles
       </h2>
@@ -33,7 +33,7 @@ export default function StyleCards() {
           <div
             key={index}
             className="
-        relative                         /* FIX 1 */
+        relative                        
         min-w-[280px] max-w-[280px]
         flex-shrink-0 rounded-2xl 
         overflow-hidden shadow-md
@@ -43,7 +43,7 @@ export default function StyleCards() {
             <Image
               src={item.img}
               alt={item.title}
-              className="w-full h-full object-cover" /* FIX 2 */
+              className="w-full h-full object-cover"
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

@@ -17,13 +17,13 @@ export default function ContactUs() {
       <section className="w-full">
         <CTASection />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <ContactDetailsSection />
       </section>
       <section className="w-full">
         <ProjectDetailsForm />
       </section>
-      <section className="w-full">
+      <section className="w-full py-8 md: py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-[60px] xl:px-[80px] 2xl:px-[140px]">
         <VisitUs />
       </section>
       <section className="w-full">

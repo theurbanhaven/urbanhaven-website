@@ -53,7 +53,7 @@ export default function ProcessSection() {
       <h2 className="heading2 text-center">How it works</h2>
 
       <div className="w-full flex justify-center">
-        <div className="relative w-[90%] max-w-[1440px]">
+        <div className="relative max-w-[1440px]">
           <div className="hidden lg:flex absolute top-[72px] left-[10%] right-[10%] justify-between">
             {Array.from({ length: 4 }).map((_, i) => (
               <motion.div

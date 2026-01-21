@@ -2,11 +2,11 @@
 
 export default function ReachImpact() {
   return (
-    <section className="w-full bg-white py-8 sm:py-8 md:py-8 lg:py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full bg-white ">
+      <div className="max-w-full">
         <h2 className="text-center heading2">Our Reach & Impact</h2>
 
-        <div className="mt-12 animate-bg-gradient text-white rounded-2xl p-12 shadow-lg mx-auto max-w-7xl">
+        <div className="mt-12 animate-bg-gradient text-white rounded-2xl p-12 shadow-lg mx-auto max-w-full">
           <p className="text-center text-base md:text-lg leading-relaxed font-['Poppins']">
             With 500+ homes completed across Delhi NCR—from compact city flats
             to full-scale homes—we've delivered style, clarity and value for

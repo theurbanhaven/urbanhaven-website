@@ -16,7 +16,7 @@ export default function HeroSection() {
      h-[65vw]      
      sm:h-[55vw] 
      md:h-[52vw]  
-     lg:h-[650px] 
+     lg:h-[688px] 
      overflow-hidden
   "
       >
@@ -32,9 +32,9 @@ export default function HeroSection() {
       <div
         className="
           flex flex-col justify-center 
-          items-center text-center            
+          items-center text-center              
           md:items-start md:text-left          
-          px-8 md:px-10 lg:px-14 py-8
+          px-8 md:px-10 lg:px-12 py-8
         "
       >
         <h1 className="heading1">
@@ -45,7 +45,7 @@ export default function HeroSection() {
 
         <p
           className="
-            text-black text-sm lg:text-[16px]
+            text-[#0c0c0c] text-sm lg:text-[16px]
             font-normal font-['Poppins'] leading-6
             max-w-[320px] mt-6
           "

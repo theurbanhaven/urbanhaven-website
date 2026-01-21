@@ -41,7 +41,7 @@ export default function TeamSection() {
   ];
 
   return (
-    <section className="w-full py-8 sm:py-8 md:py-8 lg:py-16 px-6">
+    <section className="w-full">
       <h2 className="text-center heading2">Meet Our Team</h2>
 
       <p className="text-center text-[#495057] text-base font-normal font-['Poppins'] mt-4">
@@ -52,7 +52,7 @@ export default function TeamSection() {
         Co-Founders
       </h3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 max-w-full mx-auto text-center">
         {coFounders.map((founder, index) => (
           <div
             key={index}
@@ -76,7 +76,7 @@ export default function TeamSection() {
         Urbanhaven Team
       </h3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 max-w-full mx-auto text-center">
         {urbanHavenTeam.map((member, index) => (
           <div
             key={index}
