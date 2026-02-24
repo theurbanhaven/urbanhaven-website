@@ -30,14 +30,14 @@ export default function TeamSection() {
 
   const urbanHavenTeam = [
     { name: "Kavita Joshi", role: "Senior Interior Designer", image: Kavita },
-    { name: "Kirti Pahuja", role: "Interior Designer", image: "" },
+    { name: "Kirti Pahuja", role: "Interior Designer + HR", image: "" },
     { name: "Sahil", role: "Production Design Manager", image: Sahil },
     { name: "Vaishnavi Verma", role: "Interior Designer", image: "" },
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
-    { name: "Vanshika Maindola", role: "Interior Consultant", image: "" },
+    { name: "Vyomika Saxena", role: "Interior Designer", image: "" },
     { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
     { name: "Pranay Kumar", role: "Software Developer", image: "" },
-    { name: "Sourav Kumar", role: "Graphic & UI/UX Designer", image: "" }
+    { name: "Sagnik Saha", role: "Graphic & UI/UX Designer", image: "" }
   ];
 
   return (
