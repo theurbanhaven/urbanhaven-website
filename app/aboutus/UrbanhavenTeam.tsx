@@ -1,12 +1,16 @@
 "use client";
 import Image from "next/image";
-import PranayPhoto from "@/public/AboutUs/pranayphoto.jpg";
+import Pranay from "@/public/AboutUs/pranayphoto 1.svg";
 import Manish from "@/public/AboutUs/Manish.svg";
 import Karan from "@/public/AboutUs/Karan.svg";
 import Vaibhav from "@/public/AboutUs/Vaibhav.svg";
 import Kavita from "@/public/AboutUs/Kavita.svg";
 import Ankitesh from "@/public/AboutUs/Ankitesh.svg";
 import Sahil from "@/public/AboutUs/Sahil.svg";
+import Sahil1 from "@/public/AboutUs/Sahil1.jpg";
+import Vyomika from "@/public/AboutUs/Vyomika.svg";
+import Kirti from "@/public/AboutUs/Kirti.svg";
+import Vaishnavi from "@/public/AboutUs/Vaishnavi.svg";
 
 export default function TeamSection() {
   const coFounders = [
@@ -30,13 +34,13 @@ export default function TeamSection() {
 
   const urbanHavenTeam = [
     { name: "Kavita Joshi", role: "Senior Interior Designer", image: Kavita },
-    { name: "Kirti Pahuja", role: "Interior Designer + HR", image: "" },
+    { name: "Kirti Pahuja", role: "Interior Designer + HR", image: Kirti },
     { name: "Sahil", role: "Production Design Manager", image: Sahil },
-    { name: "Vaishnavi Verma", role: "Interior Designer", image: "" },
+    { name: "Vyomika Saxena", role: "Interior Designer", image: Vyomika },
+    { name: "Vaishnavi Verma", role: "Interior Designer", image: Vaishnavi },
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
-    { name: "Vyomika Saxena", role: "Interior Designer", image: "" },
     { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
-    { name: "Pranay Kumar", role: "Software Developer", image: "" },
+    { name: "Pranay Kumar", role: "Software Developer", image: Pranay },
     { name: "Sagnik Saha", role: "Graphic & UI/UX Designer", image: "" }
   ];
 
