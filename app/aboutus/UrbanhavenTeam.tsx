@@ -7,7 +7,7 @@ import Vaibhav from "@/public/AboutUs/Vaibhav.svg";
 import Kavita from "@/public/AboutUs/Kavita.svg";
 import Ankitesh from "@/public/AboutUs/Ankitesh.svg";
 import Sahil from "@/public/AboutUs/Sahil.svg";
-import Sahil1 from "@/public/AboutUs/Sahil1.jpg";
+import Sahils from "@/public/AboutUs/Sahils.svg";
 import Vyomika from "@/public/AboutUs/Vyomika.svg";
 import Kirti from "@/public/AboutUs/Kirti.svg";
 import Vaishnavi from "@/public/AboutUs/Vaishnavi.svg";
@@ -35,7 +35,7 @@ export default function TeamSection() {
   const urbanHavenTeam = [
     { name: "Kavita Joshi", role: "Senior Interior Designer", image: Kavita },
     { name: "Kirti Pahuja", role: "Interior Designer + HR", image: Kirti },
-    { name: "Sahil", role: "Production Design Manager", image: Sahil },
+    { name: "Sahil", role: "Interior Designer (Production)", image: Sahils },
     { name: "Vyomika Saxena", role: "Interior Designer", image: Vyomika },
     { name: "Vaishnavi Verma", role: "Interior Designer", image: Vaishnavi },
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
