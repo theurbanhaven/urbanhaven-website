@@ -6,11 +6,13 @@ import Karan from "@/public/AboutUs/Karan.svg";
 import Vaibhav from "@/public/AboutUs/Vaibhav.svg";
 import Kavita from "@/public/AboutUs/Kavita.svg";
 import Ankitesh from "@/public/AboutUs/Ankitesh.svg";
-import Sahil from "@/public/AboutUs/Sahil.svg";
 import Sahils from "@/public/AboutUs/Sahils.svg";
 import Vyomika from "@/public/AboutUs/Vyomika.svg";
 import Kirti from "@/public/AboutUs/Kirti.svg";
-import Vaishnavi from "@/public/AboutUs/Vaishnavi.svg";
+import Rijwal from "@/public/AboutUs/Rijwal.png";
+import Nitin from "@/public/AboutUs/Nitin.svg";
+
+// import Vaishnavi from "@/public/AboutUs/Vaishnavi.svg";
 
 export default function TeamSection() {
   const coFounders = [
@@ -37,11 +39,12 @@ export default function TeamSection() {
     { name: "Kirti Pahuja", role: "Interior Designer + HR", image: Kirti },
     { name: "Sahil", role: "Interior Designer (Production)", image: Sahils },
     { name: "Vyomika Saxena", role: "Interior Designer", image: Vyomika },
-    { name: "Vaishnavi Verma", role: "Interior Designer", image: Vaishnavi },
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
     { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
     { name: "Pranay Kumar", role: "Software Developer", image: Pranay },
-    { name: "Sagnik Saha", role: "Graphic & UI/UX Designer", image: "" }
+    { name: "Sagnik Saha", role: "Graphic & UI/UX Designer", image: "" },
+    { name: "Rijwal Rajta", role: "Interior Consultant", image: Rijwal },
+    { name: "Nitin Yadav", role: "Sales Manager", image: Nitin }
   ];
 
   return (
