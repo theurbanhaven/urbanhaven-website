@@ -3,7 +3,8 @@ import Script from "next/script";
 import { ModalProvider } from "@/app/context/Modalcontext";
 import ConsultationModal from "@/app/components/ui/ConsultationModal";
 import ThankYouModal from "@/app/components/ui/ThankYouModal";
-import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
   title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
@@ -80,7 +81,7 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=2206197019884720&ev=PageView&noscript=1"
           />
         </noscript>
-        <Toaster position="top-center" />
+        <ToastContainer position="top-right" autoClose={2000} />
         <ModalProvider>
           <ConsultationModal />
           <ThankYouModal />
