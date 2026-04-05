@@ -2,7 +2,6 @@ export default function BlogContent({ content }: any) {
   const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
   return content?.map((block: any, index: number) => {
-    // Paragraph
     if (block.type === "paragraph") {
       const text = block.children?.map((child: any) => child.text).join("");
       if (!text) return null;
@@ -14,7 +13,6 @@ export default function BlogContent({ content }: any) {
       );
     }
 
-    // Image
     if (block.type === "image") {
       let imageUrl = block.image?.url;
 

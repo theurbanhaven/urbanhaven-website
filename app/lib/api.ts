@@ -4,10 +4,9 @@ export async function getBlogs() {
   const res = await fetch(`${BASE_URL}/api/blogs?populate=*`);
   const json = await res.json();
 
-  // flatten manually
   return json.data.map((item: any) => ({
     id: item.id,
-    ...item, // if already flat
+    ...item, 
   }));
 }
 
