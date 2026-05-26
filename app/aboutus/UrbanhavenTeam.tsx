@@ -5,7 +5,7 @@ import Manish from "@/public/AboutUs/Manish.svg";
 import Karan from "@/public/AboutUs/Karan.svg";
 import Vaibhav from "@/public/AboutUs/Vaibhav.svg";
 import Kavita from "@/public/AboutUs/Kavita.svg";
-import Ankitesh from "@/public/AboutUs/Ankitesh.svg";
+// import Ankitesh from "@/public/AboutUs/Ankitesh.svg";
 import Sahils from "@/public/AboutUs/Sahils.svg";
 import Vyomika from "@/public/AboutUs/Vyomika.svg";
 import Kirti from "@/public/AboutUs/Kirti.svg";
@@ -40,7 +40,7 @@ export default function TeamSection() {
     { name: "Sahil", role: "Interior Designer (Production)", image: Sahils },
     { name: "Vyomika Saxena", role: "Interior Designer", image: Vyomika },
     { name: "Vineet Kumar", role: "Interior Consultant", image: "" },
-    { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
+    // { name: "Ankitesh Thakur", role: "Marketing Consultant", image: Ankitesh },
     { name: "Pranay Kumar", role: "Software Developer", image: Pranay },
     { name: "Sagnik Saha", role: "Graphic & UI/UX Designer", image: "" },
     { name: "Rijwal Rajta", role: "Interior Consultant", image: Rijwal },
