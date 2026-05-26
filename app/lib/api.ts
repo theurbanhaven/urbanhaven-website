@@ -1,25 +1,25 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+// const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-export async function getBlogs() {
-  const res = await fetch(`${BASE_URL}/api/blogs?populate=*`);
-  const json = await res.json();
+// export async function getBlogs() {
+//   const res = await fetch(`${BASE_URL}/api/blogs?populate=*`);
+//   const json = await res.json();
 
-  return json.data.map((item: any) => ({
-    id: item.id,
-    ...item, 
-  }));
-}
+//   return json.data.map((item: any) => ({
+//     id: item.id,
+//     ...item, 
+//   }));
+// }
 
-export async function getBlogBySlug(slug: string) {
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+// export async function getBlogBySlug(slug: string) {
+//   const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-  const res = await fetch(
-    `${BASE_URL}/api/blogs?filters[slug]=${slug}&populate=*`
-  );
+//   const res = await fetch(
+//     `${BASE_URL}/api/blogs?filters[slug]=${slug}&populate=*`
+//   );
 
-  const json = await res.json();
+//   const json = await res.json();
 
-  console.log("API RESPONSE:", json);
+//   console.log("API RESPONSE:", json);
 
-  return json.data?.[0] || null;
-}
+//   return json.data?.[0] || null;
+// }
