@@ -73,10 +73,10 @@ export default function Footer() {
             <li className="flex gap-2">
               <Image src={Phone} alt="phone" className="w-4 h-4 mt-1" />
               <a
-                href="tel:+919211324572"
+                href="tel:+91-9319608686"
                 className="underline hover:text-black"
               >
-                +91-9211324572
+                +91-9319608686
               </a>
             </li>
 
