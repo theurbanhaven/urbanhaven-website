@@ -5,24 +5,48 @@ import ConsultationModal from "@/app/components/ui/ConsultationModal";
 import ThankYouModal from "@/app/components/ui/ThankYouModal";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.theurbanhaven.in"),
+
   title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+
   description:
     "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
-  icons: {
-    icon: "/favicon.ico"
+
+  alternates: {
+    canonical: "/"
   },
+
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico"
+      }
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png" // Only if you have this file
+  },
+
   verification: {
     google: "TU_AJjcIMNqtXXxBNtH_hBoAhwzE8muEqf-ejZOvqLY"
   },
 
   openGraph: {
     title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+
     description:
       "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
-    url: "https://theurbanhaven.in/",
+
+    url: "/",
+
     siteName: "UrbanHaven",
+
+    locale: "en_IN",
+
+    type: "website",
+
     images: [
       {
         url: "/og-image.png",
@@ -30,16 +54,17 @@ export const metadata = {
         height: 630,
         alt: "UrbanHaven Interior Design"
       }
-    ],
-    locale: "en_IN",
-    type: "website"
+    ]
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "UrbanHaven – Best Interior Designers in Delhi & Noida",
+
     description:
       "Transform your home into a beautiful, functional space with UrbanHaven’s premium interior design services.",
+
     images: ["/og-image.png"]
   }
 };
