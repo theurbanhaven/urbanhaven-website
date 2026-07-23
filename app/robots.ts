@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: "https://theurbanhaven.in/sitemap.xml",
+    sitemap: "https://www.theurbanhaven.in/sitemap.xml",
   };
 }
