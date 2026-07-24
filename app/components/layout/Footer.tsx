@@ -51,7 +51,11 @@ export default function Footer() {
           </h4>
           <ul className="space-y-4 text-base font-normal font-['Poppins'] text-[#495057]">
             <li>Portfolio</li>
-            <li>Blog</li>
+            <li>
+              <Link href="/pricematchpolicy" className="hover:text-black">
+                Price Match Policy
+              </Link>
+            </li>
             <li>
               <Link href="/aboutus" className="hover:text-black">
                 About Us
